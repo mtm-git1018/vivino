@@ -16,7 +16,7 @@ $ctaColor: rgba(
 .hero-image {
   width: 100%;
   height: 700px;
-  background: url(image/heroimg.jpg) no-repeat center;
+  background: url(/image/heroimg.jpg) no-repeat center;
   position: relative;
 }
 
@@ -188,7 +188,7 @@ $ctaColor: rgba(
 
 .item1 {
   @extend %item;
-  background: $subColor url(image/red.png) no-repeat left/ contain;
+  background: $subColor url(/image/red.png) no-repeat left/ contain;
 }
 
 .main-grid_detail {
@@ -399,7 +399,7 @@ $ctaColor: rgba(
 .test-review_img {
   width: 710px;
   height: 230px;
-  background: url(image/Rectangle\ 84.jpg) no-repeat;
+  background: url(/image/bottles.jpg) no-repeat;
 }
 
 .test-review_text {
@@ -436,7 +436,7 @@ $ctaColor: rgba(
 }
 
 .paring_img {
-  background: url(image/Rectangle\ 85.jpg) no-repeat;
+  background: url(/image/cheese.jpg) no-repeat;
   width: 710px;
   height: 230px;
 }
