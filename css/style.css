@@ -6,7 +6,7 @@
 .hero-image {
   width: 100%;
   height: 700px;
-  background: url(/image/heroimg.jpg) no-repeat center;
+  background: url(../image/heroimg.jpg) no-repeat center;
   position: relative;
 }
 
@@ -168,7 +168,7 @@
 }
 
 .item1 {
-  background: #f3e8e8 url(/image/red.png) no-repeat left/contain;
+  background: #f3e8e8 url(../img/red2.png) no-repeat left/contain;
 }
 
 .main-grid_detail {
@@ -373,7 +373,7 @@
 .test-review_img {
   width: 710px;
   height: 230px;
-  background: url(/image/bottles.jpg) no-repeat;
+  background: url(../image/bottles.jpg) no-repeat;
 }
 
 .test-review_text {
@@ -411,7 +411,7 @@
 }
 
 .paring_img {
-  background: url(/image/cheese.jpg) no-repeat;
+  background: url(../image/cheese.jpg) no-repeat;
   width: 710px;
   height: 230px;
 }
