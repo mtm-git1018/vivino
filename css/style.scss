@@ -12,11 +12,58 @@ $ctaColor: rgba(
   margin: 0 auto;
 }
 
+.black-bg {
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: -100vh;
+  z-index: 99;
+  transition: 0.5s;
+}
+
+.search-bar {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+
+  input {
+    border: 1px solid $ctaColor;
+    border-radius: 50px;
+    width: 600px;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  input:focus {
+    padding-left: 40px;
+    transition: opacity 0.3s;
+  }
+
+  input:focus::placeholder {
+    opacity: 0;
+  }
+  input::placeholder {
+    padding-left: 20px;
+  }
+}
+
+.search-btn {
+  position: absolute;
+  right: 20px;
+  top: 4px;
+  width: 50px;
+  height: 50px;
+  color: $textcolor;
+  cursor: pointer;
+}
+
 /////////////////////////////////////////헤더//////////////////////////////////////////////////
 .hero-image {
   width: 100%;
   height: 700px;
-  background: url(image/heroimg.jpg) no-repeat center;
+  background: url(/image/heroimg.jpg) no-repeat center;
   position: relative;
 }
 
@@ -24,24 +71,24 @@ $ctaColor: rgba(
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 50px;
+  gap: 20px;
   position: absolute;
   bottom: 66px;
   right: 220px;
 
   h1 {
     color: $impactColor;
-    text-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+    text-shadow: 0 2px 2px rgba($color: #000000, $alpha: 0.25);
   }
 
   .box {
     color: $mainColor;
-    width: 240px;
-    height: 80px;
+    width: 160px;
+    height: 56px;
     border-radius: 40px;
     background-color: $impactColor;
     text-align: center;
-    line-height: 80px;
+    line-height: 56px;
     position: relative;
     overflow: hidden;
 
@@ -122,12 +169,17 @@ $ctaColor: rgba(
   gap: 30px;
 
   li {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
 
+  li svg {
+    stroke: #f3e8e8;
+    stroke-width: 2px;
+  }
   li:hover svg {
-    fill: #fff;
+    // fill: #fff;
+    stroke: #fff;
   }
 }
 
@@ -148,8 +200,8 @@ $ctaColor: rgba(
   height: 50px;
   text-align: center;
   line-height: 50px;
-  background-color: $subColor;
-  color: $textcolor;
+  background-color: $impactColor;
+  color: $mainColor;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s;
@@ -171,24 +223,47 @@ $ctaColor: rgba(
   transform: scale(1.1);
 }
 
+.region-container {
+  visibility: hidden;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.category-tab {
+  @extend .tab;
+}
+
+.category-tab:hover {
+  transform: scale(1.1);
+}
+
+.on {
+  background-color: $ctaColor;
+  color: $impactColor;
+}
+
 .main-grid {
   max-width: 1440px;
-  margin: 100px auto;
+  max-height: 1110px;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repaet(2, 1fr);
-  gap: 40px;
+  gap: 20px;
+  overflow: hidden;
 }
 
-%item {
-  width: 468px;
+.main-grid_item {
+  width: 464px;
   height: 540px;
   border-radius: 10px;
-}
-
-.item1 {
-  @extend %item;
-  background: $subColor url(img/red2.png) no-repeat left/ contain;
+  background: $impactColor;
+  background-repeat: no-repeat;
+  padding: 20px 32px;
+  display: flex;
 }
 
 .main-grid_detail {
@@ -201,24 +276,51 @@ $ctaColor: rgba(
   gap: 130px;
 }
 
+.main-grid_mainimg {
+  z-index: 99;
+}
+
 .main-grid_top {
   display: flex;
   gap: 20px;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 140px;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+.main-grid_region {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+  align-items: center;
+  height: 20px;
+}
+
+.main-grid_img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: $impactColor;
 }
 
 .main-grid_bottom {
   display: flex;
-  gap: 32px;
+  gap: 12px;
   flex-direction: column;
 }
 
 .main-grid_rank {
   display: flex;
-  gap: 10px;
+  justify-content: flex-end;
+  gap: 4px;
 
   div {
     display: flex;
+    align-items: center;
+    gap: 4px;
   }
 }
 
@@ -226,24 +328,30 @@ $ctaColor: rgba(
   width: 135px;
   height: 45px;
   line-height: 45px;
-  background-color: $impactColor;
-  color: $mainColor;
+  background-color: $mainColor;
+  color: $impactColor;
   border-radius: 50px;
   text-align: center;
   cursor: pointer;
 }
 
 .main-grid_more {
-  border: 0.5px solid #333;
-  width: 370px;
-  height: 110px;
+  border: 2px solid $impactColor;
+  border-radius: 20px;
+  width: 264px;
+  height: 67px;
   margin: 0 auto;
   text-align: center;
-  line-height: 110px;
+  line-height: 67px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all 0.3s;
+
+  h2 {
+    font-size: 24px;
+    color: $impactColor;
+  }
 }
 
 .main-grid_more::before {
@@ -277,10 +385,10 @@ $ctaColor: rgba(
 }
 
 .slide-box {
-  width: 33.333%;
+  width: 25%;
   height: 100%;
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 
 .slide-wrap {
@@ -307,7 +415,7 @@ $ctaColor: rgba(
   width: 345px;
   height: 300px;
   border-radius: 10px;
-  background-color: $subColor;
+  background-color: $impactColor;
 }
 
 .slide-item_text {
@@ -315,13 +423,14 @@ $ctaColor: rgba(
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  color: $impactColor;
   text-align: center;
   gap: 10px;
 }
 
 .slide-item_btn {
-  border: 0.5px solid #333;
+  border: 0.5px solid $impactColor;
+  border-radius: 10px;
   width: 150px;
   height: 45px;
   line-height: 45px;
@@ -370,18 +479,24 @@ $ctaColor: rgba(
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding-bottom: 80px;
   color: $impactColor;
-  margin-bottom: 80px;
+}
+
+.event-wrap {
+  background-color: $impactColor;
+  width: 100%;
+  height: 100%;
 }
 
 .test-btn {
   width: 224px;
-  height: 80px;
+  height: 60px;
   border-radius: 50px;
   color: $mainColor;
   background-color: $impactColor;
   text-align: center;
-  line-height: 80px;
+  line-height: 60px;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -393,19 +508,23 @@ $ctaColor: rgba(
 .test-review {
   display: flex;
   gap: 20px;
-  margin-bottom: 80px;
+  padding: 80px 0px;
 }
 
 .test-review_img {
   width: 710px;
   height: 230px;
-  background: url(image/bottles.jpg) no-repeat;
+  background: url(/image/winebottle.jpg) no-repeat 100%;
 }
 
 .test-review_text {
   display: flex;
   flex-direction: column;
   gap: 55px;
+
+  h2 {
+    color: #7b1e3b;
+  }
 }
 
 .test-review_undertext {
@@ -416,7 +535,10 @@ $ctaColor: rgba(
   svg {
     padding-top: 20px;
     transition: 0.3s;
-    transition-delay: 0.1s;
+  }
+
+  p {
+    color: #7b1e3b;
   }
 }
 
@@ -425,18 +547,19 @@ $ctaColor: rgba(
   padding-left: 10px;
 }
 
-.test-review_undertext:hover svg {
-  transform: translateX(30px);
-}
 .paring {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   display: flex;
   gap: 20px;
   justify-content: flex-end;
+
+  h2 {
+    color: #7b1e3b;
+  }
 }
 
 .paring_img {
-  background: url(image/cheese.jpg) no-repeat;
+  background: url(/image/cheese.jpg) no-repeat;
   width: 710px;
   height: 230px;
 }
@@ -456,17 +579,16 @@ $ctaColor: rgba(
   svg {
     margin-top: 20px;
     transition: all 0.3s;
-    transition-delay: 0.1s;
+  }
+
+  p {
+    color: #7b1e3b;
   }
 }
 
 .paring_undertext:hover {
   transform: scale(1.1);
   padding-right: 10px;
-}
-
-.paring_undertext:hover svg {
-  transform: translateX(-30px);
 }
 
 // /////////////////////////////////////////////푸터///////////////////////////////////////////////////
@@ -497,13 +619,13 @@ $ctaColor: rgba(
 .information-left {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
 }
 
 .information-center {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
 }
 
 .information-center .subtext {

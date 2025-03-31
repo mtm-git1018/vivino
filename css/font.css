@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
 }
@@ -10,6 +10,7 @@ h2 {
   font-size: 36px;
   font-weight: 700;
   font-family: "Playfair Display", "inter" serif;
+  color: #d5bfaa;
 }
 
 h3 {

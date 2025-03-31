@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f8f5f0;
+  background-color: #7b1e3b;
 }
 img,
 svg {
@@ -22,4 +22,15 @@ a {
 ul,
 li {
   list-style: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
