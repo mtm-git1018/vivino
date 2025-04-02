@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.6,
       person: 67,
       price: "₩88,000",
-      image: "/img/usflag.png",
-      wine: "/wines/cask.png",
+      image: "../img/usflag.png",
+      wine: "../wines/cask.png",
       category: "usa",
     },
     {
@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.6,
       person: 1701,
       price: "₩498,600",
-      image: "/img/franceflag.png",
-      wine: "/wines/brut.png",
+      image: "../img/franceflag.png",
+      wine: "../wines/brut.png",
       category: "french",
     },
     {
@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.6,
       person: 10,
       price: "₩145,600",
-      image: "/img/usflag.png",
-      wine: "/wines/csHowell.png",
+      image: "../img/usflag.png",
+      wine: "../wines/csHowell.png",
       category: "usa",
     },
     {
@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.5,
       person: 270,
       price: "₩586,000",
-      image: "/img/italyflag.png",
-      wine: "/wines/tenuta.png",
+      image: "../img/italyflag.png",
+      wine: "../wines/tenuta.png",
       category: "italy",
     },
     {
@@ -67,8 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.5,
       person: 827,
       price: "₩64,000",
-      image: "/img/arhenflag.png",
-      wine: "/wines/bramare.png",
+      image: "../img/arhenflag.png",
+      wine: "../wines/bramare.png",
       category: "southAmerica",
     },
     {
@@ -78,8 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.6,
       person: 2829,
       price: "₩366,000",
-      image: "/img/spainflag.png",
-      wine: "/wines/valbuena.png",
+      image: "../img/spainflag.png",
+      wine: "../wines/valbuena.png",
       category: "westEurope",
     },
 
@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 133727,
       price: "₩102,000",
-      image: "/img/franceflag.png",
-      wine: "/wines/moet.png",
+      image: "../img/franceflag.png",
+      wine: "../wines/moet.png",
       category: "french",
     },
     {
@@ -101,8 +101,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.2,
       person: 7061,
       price: "₩64,600",
-      image: "/img/franceflag.png",
-      wine: "/wines/saint-emil.png",
+      image: "../img/franceflag.png",
+      wine: "../wines/saint-emil.png",
       category: "french",
     },
     {
@@ -112,8 +112,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 29324,
       price: "₩54,100",
-      image: "/img/franceflag.png",
-      wine: "/wines/lafiole.png",
+      image: "../img/franceflag.png",
+      wine: "../wines/lafiole.png",
       category: "french",
     },
     {
@@ -123,8 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.7,
       person: 19581,
       price: "₩30,800",
-      image: "/img/franceflag.png",
-      wine: "/wines/legrand.png",
+      image: "../img/franceflag.png",
+      wine: "../wines/legrand.png",
       category: "french",
     },
     {
@@ -134,8 +134,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.0,
       person: 17325,
       price: "₩92,600",
-      image: "/img/franceflag.png",
-      wine: "/wines/chateau.png",
+      image: "../img/franceflag.png",
+      wine: "../wines/chateau.png",
       category: "french",
     },
     {
@@ -145,8 +145,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.5,
       person: 60393,
       price: "₩26,000",
-      image: "/img/italyflag.png",
-      wine: "/wines/ruffino.png",
+      image: "../img/italyflag.png",
+      wine: "../wines/ruffino.png",
       category: "italy",
     },
     {
@@ -156,8 +156,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.8,
       person: 33560,
       price: "₩26,000",
-      image: "/img/italyflag.png",
-      wine: "/wines/lamarca.png",
+      image: "../img/italyflag.png",
+      wine: "../wines/lamarca.png",
       category: "italy",
     },
     {
@@ -167,8 +167,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 26986,
       price: "₩24,000",
-      image: "/img/italyflag.png",
-      wine: "/wines/cadel.png",
+      image: "../img/italyflag.png",
+      wine: "../wines/cadel.png",
       category: "italy",
     },
     {
@@ -178,8 +178,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.0,
       person: 26986,
       price: "₩55,000",
-      image: "/img/italyflag.png",
-      wine: "/wines/avign.png",
+      image: "./img/italyflag.png",
+      wine: "./wines/avign.png",
       category: "italy",
     },
     {
@@ -189,8 +189,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.2,
       person: 95291,
       price: "₩22,000",
-      image: "/img/spainflag.png",
-      wine: "/wines/felix.png",
+      image: "./img/spainflag.png",
+      wine: "./wines/felix.png",
       category: "westEurope",
     },
     {
@@ -200,8 +200,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.0,
       person: 6866,
       price: "₩51,400",
-      image: "/img/ptflag.png",
-      wine: "/wines/casa.png",
+      image: "./img/ptflag.png",
+      wine: "./wines/casa.png",
       category: "westEurope",
     },
     {
@@ -211,8 +211,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 5834,
       price: "₩20,500",
-      image: "/img/ptflag.png",
-      wine: "/wines/silk.png",
+      image: "./img/ptflag.png",
+      wine: "./wines/silk.png",
       category: "westEurope",
     },
     {
@@ -222,8 +222,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.0,
       person: 42426,
       price: "₩66,000",
-      image: "/img/spainflag.png",
-      wine: "/wines/borsao.png",
+      image: "./img/spainflag.png",
+      wine: "./wines/borsao.png",
       category: "westEurope",
     },
     {
@@ -233,8 +233,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.0,
       person: 24108,
       price: "₩55,500",
-      image: "/img/spainflag.png",
-      wine: "/wines/lan.png",
+      image: "./img/spainflag.png",
+      wine: "./wines/lan.png",
       category: "westEurope",
     },
     {
@@ -244,8 +244,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.2,
       person: 37219,
       price: "₩102,000",
-      image: "/img/arhenflag.png",
-      wine: "/wines/catena.png",
+      image: "./img/arhenflag.png",
+      wine: "./wines/catena.png",
       category: "southAmerica",
     },
     {
@@ -255,8 +255,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.5,
       person: 35187,
       price: "₩30,800",
-      image: "/img/arhenflag.png",
-      wine: "/wines/altos.png",
+      image: "./img/arhenflag.png",
+      wine: "./wines/altos.png",
       category: "southAmerica",
     },
     {
@@ -266,8 +266,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.3,
       person: 23746,
       price: "₩44,100",
-      image: "/img/arhenflag.png",
-      wine: "/wines/vina.png",
+      image: "./img/arhenflag.png",
+      wine: "./wines/vina.png",
       category: "southAmerica",
     },
     {
@@ -277,8 +277,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.9,
       person: 19610,
       price: "₩24,600",
-      image: "/img/chilflag.png",
-      wine: "/wines/gran.png",
+      image: "./img/chilflag.png",
+      wine: "./wines/gran.png",
       category: "southAmerica",
     },
     {
@@ -288,8 +288,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.4,
       person: 13498,
       price: "₩102,900",
-      image: "/img/chilflag.png",
-      wine: "/wines/caballo.png",
+      image: "./img/chilflag.png",
+      wine: "./wines/caballo.png",
       category: "southAmerica",
     },
     {
@@ -299,8 +299,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 180754,
       price: "₩28,000",
-      image: "/img/usflag.png",
-      wine: "/wines/meiomi.png",
+      image: "./img/usflag.png",
+      wine: "./wines/meiomi.png",
       category: "usa",
     },
     {
@@ -310,8 +310,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 41081,
       price: "₩25,000",
-      image: "/img/usflag.png",
-      wine: "/wines/bonanza.png",
+      image: "./img/usflag.png",
+      wine: "./wines/bonanza.png",
       category: "usa",
     },
     {
@@ -321,8 +321,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.2,
       person: 38468,
       price: "₩48,000",
-      image: "/img/usflag.png",
-      wine: "/wines/prison.png",
+      image: "./img/usflag.png",
+      wine: "./wines/prison.png",
       category: "usa",
     },
     {
@@ -332,18 +332,116 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.9,
       person: 36007,
       price: "₩23,000",
-      image: "/img/usflag.png",
-      wine: "/wines/liberty.png",
+      image: "./img/usflag.png",
+      wine: "./wines/liberty.png",
       category: "usa",
+    },
+    {
+      id: 29,
+      name: "Cà dei Frati Pietro Dal Cero Amarone della Valpolicella 2016",
+      region: "italy",
+      point: 4.5,
+      person: 411,
+      price: "₩83,000",
+      image: "./img/italyflag.png",
+      wine: "./wines/pietro.png",
+      category: "italy",
     },
   ];
 
   const mainGrid = document.querySelector(".main-grid");
-  const gridItem = document.querySelectorAll(".main-grid_item");
+
   const categoryTab = document.querySelectorAll(".category-tab");
   const regionContainer = document.querySelector(".region-container");
+
   products.forEach((a) => {
-    let items = `<div class="main-grid_item" data-category="${a.category}">
+    let items = ` 
+    <div class="main-grid_item" data-category="${a.category}">
+            <div class= main-grid_mainimg>
+            <img src=${a.wine}>
+            </div>
+            <div class="main-grid_detail" >
+              <div class="main-grid_top">
+                <div class="main-grid_region">
+                  <div class="main-grid_img">
+                    <img src="${a.image}" alt="">
+                  </div>
+                  <p>${a.region}</p>
+                </div>
+                <h3>${a.name}</h3>
+              </div>
+              <div class="main-grid_bottom">
+                <div class="main-grid_rank">
+                  <h3><svg width="20" height="20" viewBox="0 0 26 24"  xmlns="http://www.w3.org/2000/svg">
+<path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2E2E2E"/>
+</svg>
+</h3>
+                  <div>
+                    <h3>${a.point}</h3>
+                    <span class="subtext">(${a.person})</span>
+                  </div>
+                </div>
+                <div class="main-grid_price">
+                  <div class="main-grid_btn">
+                    <span class="highlight">${a.price}</span>
+                  </div>
+                </div>
+             
+            </div>
+            </div>
+          </div>`;
+    mainGrid.insertAdjacentHTML("beforeend", items);
+
+    mainTab.forEach((btn) => {
+      btn.addEventListener("click", function (e) {
+        if (mainTab[0] === this) {
+          mainGrid.innerHTML = "";
+          products.forEach((a) => {
+            let items = ` 
+    <div class="main-grid_item" data-category="${a.category}">
+            <div class= main-grid_mainimg>
+            <img src=${a.wine}>
+            </div>
+            <div class="main-grid_detail" >
+              <div class="main-grid_top">
+                <div class="main-grid_region">
+                  <div class="main-grid_img">
+                    <img src="${a.image}" alt="">
+                  </div>
+                  <p>${a.region}</p>
+                </div>
+                <h3>${a.name}</h3>
+              </div>
+              <div class="main-grid_bottom">
+                <div class="main-grid_rank">
+                  <h3><svg width="20" height="20" viewBox="0 0 26 24"  xmlns="http://www.w3.org/2000/svg">
+<path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2E2E2E"/>
+</svg>
+</h3>
+                  <div>
+                    <h3>${a.point}</h3>
+                    <span class="subtext">(${a.person})</span>
+                  </div>
+                </div>
+                <div class="main-grid_price">
+                  <div class="main-grid_btn">
+                    <span class="highlight">${a.price}</span>
+                  </div>
+                </div>
+             
+            </div>
+            </div>
+          </div>`;
+            mainGrid.insertAdjacentHTML("beforeend", items);
+          });
+        } else if (mainTab[1] === this) {
+          mainGrid.innerHTML = "";
+          let copy = [...products]
+            .sort((a, b) => b.person - a.person)
+            .slice(0, 6);
+          copy.forEach((a) => {
+            let items = `
+            <div class="main-grid_item" data-category="${a.category}">
             <div class= main-grid_mainimg>
             <img src=${a.wine}>
             </div>
@@ -376,26 +474,68 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
             </div>
           </div>`;
-    mainGrid.insertAdjacentHTML("beforeend", items);
-    mainTab.forEach((btn) => {
-      btn.addEventListener("click", function () {
-        if (mainTab[0] === this) {
-          mainGrid.innerHTML = "";
-          mainGrid.insertAdjacentHTML("beforeend", items);
-        } else if (mainTab[1] === this) {
-          mainGrid.innerHTML = "";
-          let copy = [...products];
-          copy.sort((a, b) => {
-            return a.person - b.person;
+
+            mainGrid.insertAdjacentHTML("beforeend", items);
           });
-          mainGrid.insertAdjacentHTML("beforeend", items);
         } else if (mainTab[2] === this) {
-          const categoryData = categoryTab.dataset.filter;
-          if (a.category === categoryData) {
-            gridItem.style.display = "block";
-          } else {
-            gridItem.style.display = "none";
-          }
+          mainGrid.innerHTML = "";
+
+          products.forEach((a) => {
+            let items = ` 
+    <div class="main-grid_item" data-category="${a.category}">
+            <div class= main-grid_mainimg>
+            <img src=${a.wine}>
+            </div>
+            <div class="main-grid_detail" >
+              <div class="main-grid_top">
+                <div class="main-grid_region">
+                  <div class="main-grid_img">
+                    <img src="${a.image}" alt="">
+                  </div>
+                  <p>${a.region}</p>
+                </div>
+                <h3>${a.name}</h3>
+              </div>
+              <div class="main-grid_bottom">
+                <div class="main-grid_rank">
+                  <h3><svg width="20" height="20" viewBox="0 0 26 24"  xmlns="http://www.w3.org/2000/svg">
+<path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2E2E2E"/>
+</svg>
+</h3>
+                  <div>
+                    <h3>${a.point}</h3>
+                    <span class="subtext">(${a.person})</span>
+                  </div>
+                </div>
+                <div class="main-grid_price">
+                  <div class="main-grid_btn">
+                    <span class="highlight">${a.price}</span>
+                  </div>
+                </div>
+             
+            </div>
+            </div>
+          </div>`;
+            mainGrid.insertAdjacentHTML("beforeend", items);
+            // 카테고리탭 버튼을 누를 때마다 탭버튼에 맞는 와인 화면에 보여주기
+            // 만약 내가 클릭한 버튼의 필터가 와인의 카테고리와 맞아 떨어지면 보여주세요
+
+            categoryTab.forEach((btn) => {
+              btn.addEventListener("click", function () {
+                let filter = this.dataset.filter;
+                const gridItem = document.querySelectorAll(".main-grid_item");
+
+                gridItem.forEach((item) => {
+                  let category = item.dataset.category;
+                  if (category == filter) {
+                    item.style.display = "flex";
+                  } else {
+                    item.style.display = "none";
+                  }
+                });
+              });
+            });
+          });
         }
       });
     });
@@ -427,6 +567,292 @@ document.addEventListener("DOMContentLoaded", function () {
         regionContainer.style.visibility = "hidden";
       }
     });
+  });
+});
+
+let redWine = [
+  {
+    id: 0,
+    name: "Cartuxa Pêra-Manca Tinto 2005",
+    image: "../wines/cartuxa.png",
+    flavor: "plum, blackberry, vanilla",
+    price: "29,000",
+  },
+  {
+    id: 1,
+    name: "Quintarelli Giuseppe Amarone della Valpolicella Classico 2000",
+    image: "../wines/quin.png",
+    flavor: "chocolate, violet, jam",
+    price: "16,000",
+  },
+  {
+    id: 2,
+    name: "Château Haut-Brion Pessac-Léognan  1990",
+    image: "../wines/pess.png",
+    flavor: "blackfruit, cherry, mint",
+    price: "19,000",
+  },
+  {
+    id: 3,
+    name: "Casa Ferreirinha Barca Velha Douro 1999",
+    image: "../wines/barca.png",
+    flavor: "oak, red fruit, prune",
+    price: "24,000",
+  },
+  {
+    id: 4,
+    name: "Château La Mission Haut-Brion Pessac-Léognan 1989",
+    image: "../wines/leog.png",
+    flavor: "cassis, raspberry, fig",
+    price: "32,000",
+  },
+  {
+    id: 5,
+    name: "Masseto Toscana 2007",
+    image: "../wines/masseto.png",
+    flavor: "chochlate, blackberry, truffles",
+    price: "24,000",
+  },
+  {
+    id: 6,
+    name: "Harlan Estate Red 2016",
+    image: "../wines/harlan.png",
+    flavor: "oak, blackberry, blackcurrant",
+    price: "17,000",
+  },
+  {
+    id: 7,
+    name: "Legado Douro Tinto 2015",
+    image: "../wines/douro.png",
+    flavor: "oak, plum, cinnamon",
+    price: "38,000",
+  },
+  {
+    id: 8,
+    name: "Scarecrow Cabernet Sauvignon 2016 United",
+    image: "../wines/scare.png",
+    flavor: "cassis, pepper, cherry",
+    price: "102,000",
+  },
+  {
+    id: 9,
+    name: "Viña Cobos Cobos Volturno 2016",
+    image: "../wines/cobos.png",
+    flavor: "chocolate, cherry, cocoa",
+    price: "23,000",
+  },
+];
+
+let whiteWine = [
+  {
+    id: 0,
+    name: "Whitehaven Sauvignon Blanc 2024",
+    image: "../wines/heaven.png",
+    flavor: "grapefruit, pear, citrus",
+    price: "26,000",
+  },
+  {
+    id: 1,
+    name: "Pascal Jolivet Sancerre Blanc 2024",
+    image: "../wines/pascal.png",
+    flavor: "green apple, honey, gooseberry",
+    price: "51,000",
+  },
+  {
+    id: 2,
+    name: "Mer Soleil Reserve Chardonnay 2023",
+    image: "../wines/mersole.png",
+    flavor: "butter, apple, tropical",
+    price: "51,000",
+  },
+  {
+    id: 3,
+    name: "The Crossings Sauvignon Blanc 2024",
+    image: "../wines/cross.png",
+    flavor: "citrus, passion fruit, peach",
+    price: "25,000",
+  },
+  {
+    id: 4,
+    name: "Babich Sauvignon Blanc 2024",
+    image: "../wines/babich.png",
+    flavor: "lime, pineapple, green apple",
+    price: "32,000",
+  },
+  {
+    id: 5,
+    name: "Louis Latour Pouilly-Fuissé 2023",
+    image: "../wines/latour.png",
+    flavor: "pear, lemon, butter",
+    price: "52,000",
+  },
+  {
+    id: 6,
+    name: "Tramin Nussbaumer Gewürztraminer 2023",
+    image: "../wines/tramin.png",
+    flavor: "lychee, honey, melon",
+    price: "66,000",
+  },
+  {
+    id: 7,
+    name: "Schmitt Söhne Riesling Relax 2023",
+    image: "../wines/schmitt.png",
+    flavor: "apple, lemon, honey",
+    price: "17,000",
+  },
+  {
+    id: 8,
+    name: "Abbazia di Novacella Kerner 2024",
+    image: "../wines/abbazia.png",
+    flavor: "peach, lemon, honey",
+    price: "41,000",
+  },
+  {
+    id: 9,
+    name: "J. Moreau & Fils Chablis 2021",
+    image: "../wines/fils.png",
+    flavor: "citrus, apple, honey",
+    price: "50,000",
+  },
+];
+
+let champaigne = [
+  {
+    id: 0,
+    name: "Veuve Clicquot Brut Champagne N.V.",
+    image: "../wines/veuve.png",
+    flavor: "apple, citrus, brioche",
+    price: "88,000",
+  },
+  {
+    id: 1,
+    name: "Bollinger Special Cuvée Brut Aÿ Champagne N.V.",
+    image: "../wines/boll.png",
+    flavor: "pear, toast, citrus",
+    price: "102,000",
+  },
+  {
+    id: 2,
+    name: "Laurent-Perrier La Cuvée Brut Champagne N.V",
+    image: "../wines/cuvee.png",
+    flavor: "citrus, apple, brioche",
+    price: "73,000",
+  },
+  {
+    id: 3,
+    name: "Taittinger Brut Champagne N.V.",
+    image: "../wines/tait.png",
+    flavor: "green apple, citrus, toast",
+    price: "64,000",
+  },
+  {
+    id: 4,
+    name: "Perrier-Jouët Grand Brut Champagne N.V.",
+    image: "../wines/errier.png",
+    flavor: "peach, citrus, almond",
+    price: "102,000",
+  },
+  {
+    id: 5,
+    name: "Pol Roger Réserve Brut Champagne N.V.",
+    image: "../wines/pol.png",
+    flavor: "apple, biscuit, citrus",
+    price: "100,000",
+  },
+  {
+    id: 6,
+    name: "Pommery Royal Brut Champagne N.V.",
+    image: "../wines/pomm.png",
+    flavor: "apple, almond, citrus",
+    price: "75,000",
+  },
+  {
+    id: 7,
+    name: "G.H. Mumm Brut Champagne N.V.",
+    image: "../wines/mumm.png",
+    flavor: "green apple, citrus, toast",
+    price: "73,000",
+  },
+  {
+    id: 8,
+    name: "Billecart-Salmon Brut Réserve Champagne N.V.",
+    image: "../wines/salmon.png",
+    flavor: "apple, brioche, citrus",
+    price: "95,000",
+  },
+  {
+    id: 9,
+    name: "Deutz Classic Brut Champagne N.V.",
+    image: "../wines/deutz.png",
+    flavor: "apple, citrus, toast",
+    price: "73,000",
+  },
+];
+const slideBox = document.querySelectorAll(".slide-box");
+
+redWine.forEach((a) => {
+  let slide = `<div class="slide-item">
+                  <div class="slide-item_img">
+                  <img src="${a.image}">
+                  </div>
+                  <div class="slide-item_text">
+                    <h3>${a.name}</h3>
+                    <p>${a.flavor}</p>
+                    <div class="slide-item_btn">
+                      <span class="subtext">${a.price}</span>
+                    </div>`;
+  slideBox[0].insertAdjacentHTML("beforeend", slide);
+});
+
+whiteWine.forEach((a) => {
+  let slide = `<div class="slide-item">
+                  <div class="slide-item_img">
+                  <img src="${a.image}">
+                  </div>
+                  <div class="slide-item_text">
+                    <h3>${a.name}</h3>
+                    <p>${a.flavor}</p>
+                    <div class="slide-item_btn">
+                      <span class="subtext">${a.price}</span>
+                    </div>`;
+  slideBox[1].insertAdjacentHTML("beforeend", slide);
+});
+
+champaigne.forEach((a) => {
+  let slide = `<div class="slide-item">
+                  <div class="slide-item_img">
+                  <img src="${a.image}">
+                  </div>
+                  <div class="slide-item_text">
+                    <h3>${a.name}</h3>
+                    <p>${a.flavor}</p>
+                    <div class="slide-item_btn">
+                      <span class="subtext">${a.price}</span>
+                    </div>`;
+  slideBox[2].insertAdjacentHTML("beforeend", slide);
+});
+
+const prevBtn = document.querySelectorAll(".prev-btn");
+const nextBtn = document.querySelectorAll(".next-btn");
+let count = Array(nextBtn.length).fill(0);
+
+nextBtn.forEach((btn, i) => {
+  btn.addEventListener("click", function () {
+    if (count[i] <= 6) {
+      count[i]++;
+      let next = 360 * count[i];
+      slideBox[i].style.transform = `translateX(-${next}px)`;
+    }
+  });
+});
+
+prevBtn.forEach((btn, i) => {
+  btn.addEventListener("click", function () {
+    if (count[i] >= 0) {
+      count[i]--;
+      let prev = count[i] * 360;
+      slideBox[i].style.transform = `translateX(-${prev}px)`;
+    }
   });
 });
 

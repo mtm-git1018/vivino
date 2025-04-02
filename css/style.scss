@@ -59,21 +59,40 @@ $ctaColor: rgba(
   cursor: pointer;
 }
 
-/////////////////////////////////////////헤더//////////////////////////////////////////////////
-.hero-image {
-  width: 100%;
-  height: 700px;
-  background: url(/image/heroimg.jpg) no-repeat center;
+//////////////////////////////////////헤더//////////////////////////////////////////////////
+
+#header {
   position: relative;
+}
+
+.mySwiper {
+  width: 1920px;
+  height: 700px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .main-text_box {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   gap: 20px;
   position: absolute;
-  bottom: 66px;
+  bottom: 93px;
+  z-index: 99;
   right: 220px;
 
   h1 {
@@ -86,12 +105,12 @@ $ctaColor: rgba(
     width: 160px;
     height: 56px;
     border-radius: 40px;
+
     background-color: $impactColor;
     text-align: center;
     line-height: 56px;
     position: relative;
     overflow: hidden;
-
     cursor: pointer;
   }
 }
@@ -121,9 +140,11 @@ $ctaColor: rgba(
 
 .overlay {
   width: 100%;
-  height: 700px;
+  height: 100%;
   background-color: $mainColor;
-  opacity: 28%;
+  opacity: 10%;
+  z-index: 99;
+  pointer-events: none;
   position: absolute;
   left: 0;
 }
@@ -243,6 +264,7 @@ $ctaColor: rgba(
 .on {
   background-color: $ctaColor;
   color: $impactColor;
+  stroke: #d5bfaa;
 }
 
 .main-grid {
@@ -286,7 +308,7 @@ $ctaColor: rgba(
   flex-direction: column;
   flex-wrap: wrap;
   width: 200px;
-  height: 140px;
+  height: 170px;
   justify-content: flex-start;
   text-align: right;
 }
@@ -338,7 +360,8 @@ $ctaColor: rgba(
 .main-grid_more {
   border: 2px solid $impactColor;
   border-radius: 20px;
-  width: 264px;
+
+  width: 220px;
   height: 67px;
   margin: 0 auto;
   text-align: center;
@@ -349,52 +372,41 @@ $ctaColor: rgba(
   transition: all 0.3s;
 
   h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: $impactColor;
   }
 }
 
-.main-grid_more::before {
-  content: "";
-  width: 0%;
-  height: 100%;
-  background-color: $textcolor;
-  position: absolute;
-  left: -150%;
-  transform: skew(-45deg);
-  z-index: -9;
-  transition: all 0.5s;
-}
-
 .main-grid_more:hover {
-  color: $subColor;
-}
-
-.main-grid_more:hover::before {
-  width: 150%;
-  left: -30%;
+  transform: scale(1.1);
 }
 
 //////////////////////////////////////////슬라이드 섹션/////////////////////////////////////////////////////
-
-.slide-container {
-  margin-top: 25px;
-  width: 1440px;
-  height: 450px;
-  overflow: hidden;
-}
-
-.slide-box {
-  width: 25%;
-  height: 100%;
-  display: flex;
-  gap: 20px;
-}
 
 .slide-wrap {
   position: relative;
 }
 
+.slide-container {
+  margin-top: 25px;
+  width: 1440px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.slide-box {
+  width: 25%;
+  height: 340px;
+  object-fit: contain;
+  display: flex;
+  gap: 20px;
+  transform: translateX(0);
+  transition: all 0.3s;
+}
+
+.slide-item:last-child {
+  position: relative;
+}
 .prev-btn {
   position: absolute;
   left: -5%;
@@ -411,17 +423,39 @@ $ctaColor: rgba(
   transform: translateY(-50%);
 }
 
+.slide-item:last-child::after {
+  content: "";
+  display: block;
+  background: url(../image/Subtract.png) no-repeat center;
+  cursor: pointer;
+  height: 111px;
+  width: 68px;
+  position: absolute;
+  right: -50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slide-item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .slide-item_img {
   width: 345px;
-  height: 300px;
+  height: 340px;
+  padding: 20px 0px;
   border-radius: 10px;
+  object-fit: contain;
   background-color: $impactColor;
 }
 
 .slide-item_text {
   margin-top: 25px;
+  height: 150px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   color: $impactColor;
   text-align: center;
@@ -435,33 +469,12 @@ $ctaColor: rgba(
   height: 45px;
   line-height: 45px;
   cursor: pointer;
-  position: relative;
   overflow: hidden;
   transition: all 0.3s;
 }
 
-.slide-item_btn::before {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  left: -50%;
-  top: -200%;
-  background-color: $textcolor;
-  transition: all 0.3s;
-  z-index: -9;
-  transform: skew(-45deg);
-}
-
 .slide-item_btn:hover {
-  color: #fff;
-}
-
-.slide-item_btn:hover::before {
-  left: -15%;
-  top: 0;
-  width: 200%;
-  transform: skew(-45deg);
+  transform: scale(1.1);
 }
 
 .wine {
@@ -483,12 +496,6 @@ $ctaColor: rgba(
   color: $impactColor;
 }
 
-.event-wrap {
-  background-color: $impactColor;
-  width: 100%;
-  height: 100%;
-}
-
 .test-btn {
   width: 224px;
   height: 60px;
@@ -505,23 +512,30 @@ $ctaColor: rgba(
   transform: scale(1.1);
 }
 
+.event-wrap {
+  background-color: $impactColor;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .test-review {
   display: flex;
   gap: 20px;
-  padding: 80px 0px;
 }
 
 .test-review_img {
-  width: 710px;
-  height: 230px;
-  background: url(/image/winebottle.jpg) no-repeat 100%;
+  width: 50%;
+  height: 350px;
+  background: url(../image/bottles.jpg) no-repeat;
 }
 
 .test-review_text {
   display: flex;
   flex-direction: column;
   gap: 55px;
-
+  color: $mainColor;
   h2 {
     color: #7b1e3b;
   }
@@ -532,6 +546,7 @@ $ctaColor: rgba(
   gap: 10px;
   align-items: center;
   transition: all 0.3s;
+  cursor: pointer;
   svg {
     padding-top: 20px;
     transition: 0.3s;
@@ -548,7 +563,6 @@ $ctaColor: rgba(
 }
 
 .paring {
-  padding-bottom: 80px;
   display: flex;
   gap: 20px;
   justify-content: flex-end;
@@ -559,9 +573,9 @@ $ctaColor: rgba(
 }
 
 .paring_img {
-  background: url(/image/cheese.jpg) no-repeat;
-  width: 710px;
-  height: 230px;
+  background: url(../image/cheese.jpg) no-repeat;
+  width: 50%;
+  height: 350px;
 }
 
 .paring_text {
@@ -569,6 +583,7 @@ $ctaColor: rgba(
   flex-direction: column;
   text-align: right;
   gap: 55px;
+  color: $mainColor;
 }
 
 .paring_undertext {
@@ -576,6 +591,10 @@ $ctaColor: rgba(
   gap: 10px;
   align-items: center;
   transition: all 0.3s;
+  text-align: right;
+  justify-content: flex-end;
+  color: $mainColor;
+  cursor: pointer;
   svg {
     margin-top: 20px;
     transition: all 0.3s;
