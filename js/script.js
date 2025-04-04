@@ -427,8 +427,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   <div class="main-grid_btn">
                     <span class="highlight">${a.price}</span>
                   </div>
-                </div>
-             
+                </div>  
             </div>
             </div>
           </div>`;
@@ -570,6 +569,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const slideWrap = document.querySelectorAll(".slide-wrap");
 let redWine = [
   {
     id: 0,
@@ -580,7 +580,7 @@ let redWine = [
   },
   {
     id: 1,
-    name: "Quintarelli Giuseppe Amarone della Valpolicella Classico 2000",
+    name: "Quintarelli Giuseppe Classico 2000",
     image: "../wines/quin.png",
     flavor: "chocolate, violet, jam",
     price: "16,000",
@@ -798,9 +798,13 @@ redWine.forEach((a) => {
                   <div class="slide-item_text">
                     <h3>${a.name}</h3>
                     <p>${a.flavor}</p>
+                  </div>
                     <div class="slide-item_btn">
                       <span class="subtext">${a.price}</span>
-                    </div>`;
+                      </div>
+                         </div>
+                   `;
+
   slideBox[0].insertAdjacentHTML("beforeend", slide);
 });
 
@@ -812,8 +816,10 @@ whiteWine.forEach((a) => {
                   <div class="slide-item_text">
                     <h3>${a.name}</h3>
                     <p>${a.flavor}</p>
+                    </div>
                     <div class="slide-item_btn">
                       <span class="subtext">${a.price}</span>
+                      </div>
                     </div>`;
   slideBox[1].insertAdjacentHTML("beforeend", slide);
 });
@@ -826,8 +832,10 @@ champaigne.forEach((a) => {
                   <div class="slide-item_text">
                     <h3>${a.name}</h3>
                     <p>${a.flavor}</p>
+                    </div>
                     <div class="slide-item_btn">
                       <span class="subtext">${a.price}</span>
+                      </div>
                     </div>`;
   slideBox[2].insertAdjacentHTML("beforeend", slide);
 });
@@ -838,9 +846,9 @@ let count = Array(nextBtn.length).fill(0);
 
 nextBtn.forEach((btn, i) => {
   btn.addEventListener("click", function () {
-    if (count[i] <= 6) {
+    if (count[i] <= 7) {
       count[i]++;
-      let next = 360 * count[i];
+      let next = 431 * count[i];
       slideBox[i].style.transform = `translateX(-${next}px)`;
     }
   });
@@ -850,7 +858,7 @@ prevBtn.forEach((btn, i) => {
   btn.addEventListener("click", function () {
     if (count[i] >= 0) {
       count[i]--;
-      let prev = count[i] * 360;
+      let prev = count[i] * 431;
       slideBox[i].style.transform = `translateX(-${prev}px)`;
     }
   });

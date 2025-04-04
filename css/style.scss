@@ -66,7 +66,6 @@ $ctaColor: rgba(
 }
 
 .mySwiper {
-  width: 1920px;
   height: 700px;
 }
 
@@ -201,6 +200,28 @@ $ctaColor: rgba(
   li:hover svg {
     // fill: #fff;
     stroke: #fff;
+  }
+}
+.hamburger {
+  height: 30px;
+  width: 20px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+
+  span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #f3e8e8;
+  }
+
+  span:first-child {
+    top: 25%;
+  }
+  span:last-child {
+    top: 75%;
   }
 }
 
@@ -360,7 +381,6 @@ $ctaColor: rgba(
 .main-grid_more {
   border: 2px solid $impactColor;
   border-radius: 20px;
-
   width: 220px;
   height: 67px;
   margin: 0 auto;
@@ -388,25 +408,12 @@ $ctaColor: rgba(
 }
 
 .slide-container {
-  margin-top: 25px;
-  width: 1440px;
+  margin: 25px auto;
+  width: 1207px;
   height: 550px;
   overflow: hidden;
 }
 
-.slide-box {
-  width: 25%;
-  height: 340px;
-  object-fit: contain;
-  display: flex;
-  gap: 20px;
-  transform: translateX(0);
-  transition: all 0.3s;
-}
-
-.slide-item:last-child {
-  position: relative;
-}
 .prev-btn {
   position: absolute;
   left: -5%;
@@ -417,28 +424,25 @@ $ctaColor: rgba(
 
 .next-btn {
   position: absolute;
-  cursor: pointer;
   right: -5%;
   bottom: 50%;
+  cursor: pointer;
   transform: translateY(-50%);
 }
 
-.slide-item:last-child::after {
-  content: "";
-  display: block;
-  background: url(../image/Subtract.png) no-repeat center;
-  cursor: pointer;
-  height: 111px;
-  width: 68px;
-  position: absolute;
-  right: -50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.slide-item_img img {
+.slide-box {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  display: flex;
+  gap: 86px;
+  transform: translateX(0);
+  transition: all 0.3s;
+}
+
+.slide-item {
+  width: 100%;
+  height: 100%;
 }
 
 .slide-item_img {
@@ -450,9 +454,32 @@ $ctaColor: rgba(
   background-color: $impactColor;
 }
 
+.slide-item:last-child {
+  position: relative;
+}
+
+.slide-item:last-child::after {
+  content: "";
+  display: block;
+  background: url(../image/Subtract.png) no-repeat center;
+  cursor: pointer;
+  height: 111px;
+  width: 68px;
+  position: absolute;
+  right: -50%;
+  top: 25%;
+  transform: translateY(-25%);
+}
+
+.slide-item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .slide-item_text {
   margin-top: 25px;
-  height: 150px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -469,8 +496,11 @@ $ctaColor: rgba(
   height: 45px;
   line-height: 45px;
   cursor: pointer;
-  overflow: hidden;
+  // overflow: hidden;
+  margin: 20px auto;
   transition: all 0.3s;
+  text-align: center;
+  color: $impactColor;
 }
 
 .slide-item_btn:hover {
@@ -478,7 +508,8 @@ $ctaColor: rgba(
 }
 
 .wine {
-  margin: 60px 0;
+  max-width: 1200px;
+  margin: 60px auto;
 }
 
 // //////////////////////////////////////////////이벤트 탭////////////////////////////////////////////////
@@ -564,8 +595,8 @@ $ctaColor: rgba(
 
 .paring {
   display: flex;
+  flex-direction: row-reverse;
   gap: 20px;
-  justify-content: flex-end;
 
   h2 {
     color: #7b1e3b;
@@ -705,4 +736,304 @@ $ctaColor: rgba(
 
 .app-icon {
   width: 60px;
+}
+
+@media screen and (max-width: 1439px) {
+  .container {
+    max-width: 859px;
+  }
+
+  .main-grid {
+    grid-template-columns: (repeat(2, 1fr));
+    max-width: 1024px;
+  }
+  .slide-container {
+    max-width: 859px;
+  }
+
+  .slide-item_img {
+    width: 249px;
+    height: 315px;
+  }
+
+  .slide-item_text {
+    height: 120%;
+  }
+  .slide-box {
+    gap: 56px;
+  }
+
+  .prev-btn {
+    left: -10%;
+    bottom: 55%;
+    transform: translateY(-55%);
+  }
+  .next-btn {
+    right: -10%;
+    bottom: 55%;
+    transform: translateY(-55%);
+  }
+  .wine {
+    max-width: 859px;
+  }
+  .bottom-container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  .header-left h3 {
+    display: none;
+  }
+
+  .header-right svg {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .main-text_box {
+    right: 80px;
+  }
+
+  .main-grid {
+    max-height: 854px;
+    max-width: 768px;
+  }
+  .main-grid_item {
+    width: 362px;
+    height: 417px;
+  }
+
+  .slide-wrap {
+    max-width: 768px;
+  }
+
+  .slide-container {
+    max-width: 668px;
+    height: 100%;
+  }
+
+  .slide-item_text {
+    margin-top: 8px;
+    height: 100px;
+    justify-content: space-between;
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  .slide-item_img {
+    width: 210px;
+    height: 281px;
+  }
+
+  .prev-btn {
+    left: 0;
+    bottom: 60%;
+    transform: translateY(-60%);
+  }
+  .next-btn {
+    right: 0;
+    bottom: 60%;
+    transform: translateY(-60%);
+  }
+  .slide-box {
+    gap: 16px;
+  }
+  .wine {
+    max-width: 768px;
+  }
+  .test-review {
+    flex-direction: column-reverse;
+  }
+  .test-review_img {
+    width: 100%;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  .test-review_text {
+    margin-left: 30px;
+    gap: 24px;
+  }
+  .test-review_undertext {
+    display: none;
+  }
+  .paring {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .paring_img {
+    width: 100%;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  .paring_text {
+    margin-right: 30px;
+    gap: 24px;
+  }
+
+  .paring_undertext {
+    display: none;
+  }
+  .information {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
+  .information-center {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .information-right {
+    text-align: left;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    min-width: 375px;
+  }
+
+  .logo {
+    height: 84px;
+    width: 84px;
+  }
+
+  .hamburger {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search-bar {
+    input {
+      border: 1px solid $ctaColor;
+      border-radius: 50px;
+      width: 300px;
+      padding: 20px;
+      font-size: 12px;
+    }
+  }
+
+  .search-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    color: $textcolor;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  .mySwiper {
+    height: 500px;
+  }
+
+  .main-text_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    position: absolute;
+    bottom: 20px;
+    z-index: 99;
+    right: 10px;
+
+    h1 {
+      color: $impactColor;
+      font-size: 32px;
+      text-shadow: 0 2px 2px rgba($color: #000000, $alpha: 0.25);
+    }
+
+    .box {
+      color: $mainColor;
+      width: 80px;
+      height: 40px;
+      border-radius: 40px;
+
+      background-color: $impactColor;
+      text-align: center;
+      line-height: 40px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  #main-grid {
+    margin-top: 40px;
+  }
+
+  .tab {
+    width: 200px;
+    .tab::after {
+      content: "url(/image/Vector\ 11.svg)";
+      width: 20px;
+      height: 20px;
+      display: block;
+      background-color: $mainColor;
+    }
+  }
+
+  .tab:nth-child(2) {
+    display: none;
+  }
+  .tab:nth-child(3) {
+    display: none;
+  }
+
+  .main-grid {
+    max-width: 375px;
+    max-height: 417px;
+    margin: 20px auto;
+  }
+
+  .slide-wrap {
+    max-width: 375px;
+  }
+
+  .slide-container {
+    max-width: 220px;
+    height: 100%;
+  }
+
+  .wine {
+    max-width: 375px;
+  }
+
+  .event-wrap {
+    display: none;
+  }
+
+  .bottom-container {
+    max-width: 375px;
+    margin: 10px auto;
+  }
+
+  .information-right {
+    width: 300px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app {
+    display: none;
+  }
 }
