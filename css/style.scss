@@ -1013,6 +1013,9 @@ $ctaColor: rgba(
 
   .wine {
     max-width: 375px;
+    h2 {
+      font-size: 16px;
+    }
   }
 
   .event-wrap {
@@ -1021,7 +1024,7 @@ $ctaColor: rgba(
 
   .bottom-container {
     max-width: 375px;
-    margin: 10px auto;
+    margin: 0 auto;
   }
 
   .information-right {

@@ -949,12 +949,15 @@
   .wine {
     max-width: 375px;
   }
+  .wine h2 {
+    font-size: 16px;
+  }
   .event-wrap {
     display: none;
   }
   .bottom-container {
     max-width: 375px;
-    margin: 10px auto;
+    margin: 0 auto;
   }
   .information-right {
     width: 300px;
