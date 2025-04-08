@@ -18,19 +18,32 @@
   </head>
   <body>
     <div id="container">
+      <div class="top-btn">
+        <div class="red-bg">
+          <img src="/image/up.png" alt="">
+          <h2>TOP</h2>
+        </div>
+      </div>
       <div class="modal">
         <div class="black-bg">
           <div class="search-bar">
             <form action="">
             <input type="text" placeholder="검색어를 입랙해주세요" >
             <button class="search-btn"><svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M48.1865 47.4983L51.4658 50.7776M51.4664 55.0168L64.1949 67.7487C65.3658 68.9199 67.2645 68.9201 68.4355 67.749C69.6064 66.5782 69.6065 64.6799 68.4358 63.5089L55.7073 50.777C54.5364 49.6058 52.6377 49.6057 51.4667 50.7767C50.2958 51.9476 50.2957 53.8458 51.4664 55.0168Z" stroke="#d5bfaa" stroke-width ="2px" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16.3381 29.0688C18.0998 22.494 23.2354 17.3584 29.8103 15.5967C36.3852 13.8349 43.4005 15.7147 48.2137 20.5278C53.0268 25.341 54.9066 32.3563 53.1448 38.9312C51.3831 45.5061 46.2475 50.6416 39.6726 52.4034C33.0977 54.1651 26.0824 52.2854 21.2693 47.4722C16.4561 42.6591 14.5764 35.6437 16.3381 29.0688Z" stroke="#d5bfaa" stroke-linecap="round" stroke-width ="2px" stroke-linejoin="round"/>
+<path d="M48.1865 47.4983L51.4658 50.7776M51.4664 55.0168L64.1949 67.7487C65.3658 68.9199 67.2645 68.9201 68.4355 67.749C69.6064 66.5782 69.6065 64.6799 68.4358 63.5089L55.7073 50.777C54.5364 49.6058 52.6377 49.6057 51.4667 50.7767C50.2958 51.9476 50.2957 53.8458 51.4664 55.0168Z" stroke="#f3e8e8" stroke-width ="2px" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.3381 29.0688C18.0998 22.494 23.2354 17.3584 29.8103 15.5967C36.3852 13.8349 43.4005 15.7147 48.2137 20.5278C53.0268 25.341 54.9066 32.3563 53.1448 38.9312C51.3831 45.5061 46.2475 50.6416 39.6726 52.4034C33.0977 54.1651 26.0824 52.2854 21.2693 47.4722C16.4561 42.6591 14.5764 35.6437 16.3381 29.0688Z" stroke="#f3e8e8" stroke-linecap="round" stroke-width ="2px" stroke-linejoin="round"/>
 </svg>
 </button>
             </form>
           </div>
         </div>
+      </div>
+      <div class="hamburger-menu">
+        <ul class="hamburger-menubar">
+          <li><a href="#none"><h2>Store</h2></a></li>
+          <li><a href="#none"><h2>Community</h2></a></li>
+          <li><a href="#none"><h2>Event</h2></a></li>
+        </ul>
       </div>
       <header id="header">
         <div class="overlay"></div>
@@ -54,7 +67,7 @@
                 <div class="box"><h3>Search</h3></div>
               </div>
           </div>
-        </div>
+       
         <div class="header">
           <div class="container">
             <ul class="header-left">
@@ -142,7 +155,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="hamburger"><span></span><span></span></li>
+              <li class="hamburger_btn">
+                <input type="checkbox" id='hamburger'>
+                <label for="hamburger" class="hamburger" ><span></span><span></span></label>
+              </li>
             </ul>
           </div>
         </div>
@@ -187,6 +203,13 @@
           </li>
         </ul>
         <div class="main-grid">
+          <div class="main-prev">
+            <img src="/image/leftarrow.svg" alt="">
+          </div>
+          <div class="grid-slide"></div>
+          <div class="main-next">
+            <img src="/image/rightarrow.svg" alt="">
+          </div>
         </div>
         <div class="main-grid_more">
           <h2>더 많은 와인 보러가기</h2>

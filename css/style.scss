@@ -12,6 +12,30 @@ $ctaColor: rgba(
   margin: 0 auto;
 }
 
+.hamburger-menubar {
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  width: 100%;
+  position: absolute;
+  top: -100vh;
+  z-index: 99;
+  height: 100vh;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.open {
+  top: 0;
+}
+.hamburger-menubar li:hover {
+  h2 {
+    color: $mainColor;
+  }
+}
+
 .black-bg {
   background-color: rgba($color: #000000, $alpha: 0.7);
   width: 100%;
@@ -29,7 +53,7 @@ $ctaColor: rgba(
   transform: translateX(-50%);
 
   input {
-    border: 1px solid $ctaColor;
+    border: 1px solid $subColor;
     border-radius: 50px;
     width: 600px;
     padding: 20px;
@@ -43,6 +67,7 @@ $ctaColor: rgba(
 
   input:focus::placeholder {
     opacity: 0;
+    color: $subColor;
   }
   input::placeholder {
     padding-left: 20px;
@@ -59,6 +84,34 @@ $ctaColor: rgba(
   cursor: pointer;
 }
 
+.top-btn {
+  width: 70px;
+  height: 70px;
+  background-color: $ctaColor;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 60px;
+  cursor: pointer;
+
+  img {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  h2 {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: $subColor;
+    text-align: center;
+  }
+}
 //////////////////////////////////////헤더//////////////////////////////////////////////////
 
 #header {
@@ -149,7 +202,7 @@ $ctaColor: rgba(
 }
 
 .header {
-  background-color: rgba($color: #0c0c0c, $alpha: 0.3);
+  background-color: rgba($color: #0c0c0c, $alpha: 0.7);
   width: 100%;
   height: 80px;
   position: absolute;
@@ -202,12 +255,18 @@ $ctaColor: rgba(
     stroke: #fff;
   }
 }
+
+#hamburger {
+  display: none;
+}
+
 .hamburger {
   height: 30px;
-  width: 20px;
+  width: 40px;
+  display: none;
   position: relative;
   cursor: pointer;
-  display: none;
+  overflow: hidden;
 
   span {
     position: absolute;
@@ -215,14 +274,25 @@ $ctaColor: rgba(
     width: 100%;
     height: 2px;
     background-color: #f3e8e8;
+    transition: all 0.3s;
   }
 
   span:first-child {
-    top: 25%;
+    top: 20%;
   }
   span:last-child {
-    top: 75%;
+    top: 80%;
   }
+}
+
+#hamburger:checked + .hamburger span:first-child {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+#hamburger:checked + .hamburger span:last-child {
+  transform: rotate(-45deg);
+  top: 50%;
 }
 
 ////////////////////////////////////////////////////////메인 그리드///////////////////////////////////////////////////////////////
@@ -272,8 +342,12 @@ $ctaColor: rgba(
   align-items: center;
   justify-content: center;
   gap: 30px;
+  -ms-overflow-style: none;
 }
 
+.region-container::-webkit-scrollbar {
+  opacity: 0;
+}
 .category-tab {
   @extend .tab;
 }
@@ -299,6 +373,25 @@ $ctaColor: rgba(
   overflow: hidden;
 }
 
+.grid-slide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repaet(2, 1fr);
+  gap: 20px;
+}
+.main-prev {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  display: none;
+}
+
+.main-next {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  display: none;
+}
 .main-grid_item {
   width: 464px;
   height: 540px;
@@ -320,7 +413,7 @@ $ctaColor: rgba(
 }
 
 .main-grid_mainimg {
-  z-index: 99;
+  z-index: 9;
 }
 
 .main-grid_top {
@@ -376,6 +469,7 @@ $ctaColor: rgba(
   border-radius: 50px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .main-grid_more {
@@ -398,6 +492,10 @@ $ctaColor: rgba(
 }
 
 .main-grid_more:hover {
+  transform: scale(1.1);
+}
+
+.main-grid_btn:hover {
   transform: scale(1.1);
 }
 
@@ -795,6 +893,7 @@ $ctaColor: rgba(
   .hamburger {
     display: block;
   }
+
   .main-text_box {
     right: 80px;
   }
@@ -910,14 +1009,25 @@ $ctaColor: rgba(
     width: 84px;
   }
 
+  .header {
+    padding: 30px;
+  }
   .hamburger {
     width: 20px;
     height: 20px;
   }
 
+  .hamburger_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-btn {
+    right: 20px;
+  }
   .search-bar {
     input {
-      border: 1px solid $ctaColor;
       border-radius: 50px;
       width: 300px;
       padding: 20px;
@@ -939,35 +1049,15 @@ $ctaColor: rgba(
   .mySwiper {
     height: 500px;
   }
-
+  .swiper-slide img {
+    object-fit: cover;
+  }
   .main-text_box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 20px;
-    position: absolute;
-    bottom: 20px;
-    z-index: 99;
     right: 10px;
-
-    h1 {
-      color: $impactColor;
-      font-size: 32px;
-      text-shadow: 0 2px 2px rgba($color: #000000, $alpha: 0.25);
-    }
-
     .box {
-      color: $mainColor;
       width: 80px;
       height: 40px;
-      border-radius: 40px;
-
-      background-color: $impactColor;
-      text-align: center;
       line-height: 40px;
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
     }
     h3 {
       font-size: 18px;
@@ -976,34 +1066,128 @@ $ctaColor: rgba(
 
   #main-grid {
     margin-top: 40px;
+    position: relative;
   }
-
+  .main-tab_btn {
+    gap: 50px;
+  }
   .tab {
-    width: 200px;
-    .tab::after {
-      content: "url(/image/Vector\ 11.svg)";
-      width: 20px;
-      height: 20px;
-      display: block;
-      background-color: $mainColor;
+    width: 120px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    h3 {
+      font-size: 16px;
     }
   }
 
-  .tab:nth-child(2) {
-    display: none;
+  .region-container {
+    overflow-x: scroll;
+    padding-left: 50px;
+    padding-bottom: 10px;
   }
-  .tab:nth-child(3) {
-    display: none;
+
+  .category-tab {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    h3 {
+      font-size: 14px;
+    }
   }
 
   .main-grid {
-    max-width: 375px;
-    max-height: 417px;
+    width: 275px;
+    height: 417px;
     margin: 20px auto;
+    display: flex;
+    flex-wrap: nowrap;
   }
 
-  .slide-wrap {
-    max-width: 375px;
+  .grid-slide {
+    display: flex;
+    gap: 20px;
+    transform: translateX(0);
+    transition: all 0.3s;
+  }
+
+  .main-grid_item {
+    width: 275px;
+    flex-direction: column;
+  }
+
+  .main-prev {
+    display: block;
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    top: 50%;
+    cursor: pointer;
+  }
+
+  .main-next {
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    top: 50%;
+    right: 10%;
+  }
+
+  .main-grid_mainimg {
+    width: 100%;
+    height: 200px;
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .main-grid_detail {
+    align-items: flex-end;
+    gap: 20px;
+    p {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .main-grid_top {
+    height: auto;
+  }
+  .main-grid_bottom {
+    align-items: flex-end;
+    gap: 4px;
+    h3 {
+      font-size: 16px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .main-grid_btn {
+    width: 112px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 10px;
+  }
+
+  .main-grid_more {
+    width: 180px;
+    height: 64px;
+    line-height: 64px;
+
+    h2 {
+      font-size: 16px;
+      font-weight: 500;
+    }
   }
 
   .slide-container {
@@ -1014,7 +1198,7 @@ $ctaColor: rgba(
   .wine {
     max-width: 375px;
     h2 {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 

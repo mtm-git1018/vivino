@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // 서치바바
+  // 서치바
   const box = document.querySelector(".box");
   const modal = document.querySelector(".black-bg");
   box.addEventListener("click", function () {
@@ -10,6 +10,25 @@ document.addEventListener("DOMContentLoaded", function () {
     if (e.target === this) {
       modal.style.top = "-100vh";
     }
+  });
+
+  //탑버튼 누를시 가장 위로
+
+  const topBtn = document.querySelector(".top-btn");
+
+  topBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+  // 햅버거버튼
+
+  const hamburgerBtn = document.querySelector(".hamburger");
+  const hamburgerMenu = document.querySelector(".hamburger-menubar");
+
+  hamburgerBtn.addEventListener("click", function (e) {
+    hamburgerMenu.classList.toggle("open");
   });
 
   // 메인그리드 탭기능
@@ -349,12 +368,77 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  const mainGrid = document.querySelector(".main-grid");
-
+  const gridSlide = document.querySelector(".grid-slide");
   const categoryTab = document.querySelectorAll(".category-tab");
   const regionContainer = document.querySelector(".region-container");
+  const mainNextbtn = document.querySelector(".main-next");
+  const mainPrevbtn = document.querySelector(".main-prev");
 
+  let mainCount = 0;
+  let maxLength = products.length;
+
+  mainNextbtn.addEventListener("click", function () {
+    if (mainCount < maxLength - 1) {
+      mainCount++;
+      let move = mainCount * 295;
+      gridSlide.style.transform = `translateX(-${move}px)`;
+    }
+
+    mainPrevbtn.addEventListener("click", function () {
+      if (mainCount > 0) {
+        mainCount--;
+        let move = mainCount * 295;
+        gridSlide.style.transform = `translateX(-${move}px)`;
+      }
+    });
+  });
+  // 메인그리드 아이텝
   products.forEach((a) => {
+    addItem(a);
+    mainTab.forEach((btn) => {
+      btn.addEventListener("click", function (e) {
+        gridSlide.innerHTML = "";
+        mainCount = 0;
+        maxLength = products.length;
+        if (mainTab[0] === this) {
+          addItem(a);
+        } else if (mainTab[1] === this) {
+          let copy = [...products]
+            .sort((a, b) => b.person - a.person)
+            .slice(0, 6);
+          maxLength = 6;
+          copy.forEach((a) => {
+            addItem(a);
+          });
+        } else if (mainTab[2] === this) {
+          maxLength = 6;
+          products.forEach((a) => {
+            addItem(a);
+            // 카테고리탭 버튼을 누를 때마다 탭버튼에 맞는 와인 화면에 보여주기
+            // 만약 내가 클릭한 버튼의 필터가 와인의 카테고리와 맞아 떨어지면 보여주세요
+            categoryTab.forEach((btn) => {
+              btn.addEventListener("click", function () {
+                let filter = this.dataset.filter;
+                const gridItem = document.querySelectorAll(".main-grid_item");
+                gridItem.forEach((item) => {
+                  let category = item.dataset.category;
+                  if (category == filter) {
+                    item.style.display = "flex";
+                  } else {
+                    item.style.display = "none";
+                  }
+                });
+                gridSlide.style.transform = `translateX(0px)`;
+              });
+            });
+          });
+        }
+        gridSlide.style.transform = `translateX(0px)`;
+      });
+    });
+  });
+
+  function addItem(a) {
     let items = ` 
     <div class="main-grid_item" data-category="${a.category}">
             <div class= main-grid_mainimg>
@@ -386,159 +470,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <span class="highlight">${a.price}</span>
                   </div>
                 </div>
-             
             </div>
             </div>
           </div>`;
-    mainGrid.insertAdjacentHTML("beforeend", items);
-
-    mainTab.forEach((btn) => {
-      btn.addEventListener("click", function (e) {
-        if (mainTab[0] === this) {
-          mainGrid.innerHTML = "";
-          products.forEach((a) => {
-            let items = ` 
-    <div class="main-grid_item" data-category="${a.category}">
-            <div class= main-grid_mainimg>
-            <img src=${a.wine}>
-            </div>
-            <div class="main-grid_detail" >
-              <div class="main-grid_top">
-                <div class="main-grid_region">
-                  <div class="main-grid_img">
-                    <img src="${a.image}" alt="">
-                  </div>
-                  <p>${a.region}</p>
-                </div>
-                <h3>${a.name}</h3>
-              </div>
-              <div class="main-grid_bottom">
-                <div class="main-grid_rank">
-                  <h3><svg width="20" height="20" viewBox="0 0 26 24"  xmlns="http://www.w3.org/2000/svg">
-<path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2E2E2E"/>
-</svg>
-</h3>
-                  <div>
-                    <h3>${a.point}</h3>
-                    <span class="subtext">(${a.person})</span>
-                  </div>
-                </div>
-                <div class="main-grid_price">
-                  <div class="main-grid_btn">
-                    <span class="highlight">${a.price}</span>
-                  </div>
-                </div>  
-            </div>
-            </div>
-          </div>`;
-            mainGrid.insertAdjacentHTML("beforeend", items);
-          });
-        } else if (mainTab[1] === this) {
-          mainGrid.innerHTML = "";
-          let copy = [...products]
-            .sort((a, b) => b.person - a.person)
-            .slice(0, 6);
-          copy.forEach((a) => {
-            let items = `
-            <div class="main-grid_item" data-category="${a.category}">
-            <div class= main-grid_mainimg>
-            <img src=${a.wine}>
-            </div>
-            <div class="main-grid_detail" >
-              <div class="main-grid_top">
-                <div class="main-grid_region">
-                  <div class="main-grid_img">
-                    <img src="${a.image}" alt="">
-                  </div>
-                  <p>${a.region}</p>
-                </div>
-                <h3>${a.name}</h3>
-              </div>
-              <div class="main-grid_bottom">
-                <div class="main-grid_rank">
-                  <h3><svg width="20" height="20" viewBox="0 0 26 24"  xmlns="http://www.w3.org/2000/svg">
-<path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2E2E2E"/>
-</svg>
-</h3>
-                  <div>
-                    <h3>${a.point}</h3>
-                    <span class="subtext">(${a.person})</span>
-                  </div>
-                </div>
-                <div class="main-grid_price">
-                  <div class="main-grid_btn">
-                    <span class="highlight">${a.price}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>`;
-
-            mainGrid.insertAdjacentHTML("beforeend", items);
-          });
-        } else if (mainTab[2] === this) {
-          mainGrid.innerHTML = "";
-
-          products.forEach((a) => {
-            let items = ` 
-    <div class="main-grid_item" data-category="${a.category}">
-            <div class= main-grid_mainimg>
-            <img src=${a.wine}>
-            </div>
-            <div class="main-grid_detail" >
-              <div class="main-grid_top">
-                <div class="main-grid_region">
-                  <div class="main-grid_img">
-                    <img src="${a.image}" alt="">
-                  </div>
-                  <p>${a.region}</p>
-                </div>
-                <h3>${a.name}</h3>
-              </div>
-              <div class="main-grid_bottom">
-                <div class="main-grid_rank">
-                  <h3><svg width="20" height="20" viewBox="0 0 26 24"  xmlns="http://www.w3.org/2000/svg">
-<path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2E2E2E"/>
-</svg>
-</h3>
-                  <div>
-                    <h3>${a.point}</h3>
-                    <span class="subtext">(${a.person})</span>
-                  </div>
-                </div>
-                <div class="main-grid_price">
-                  <div class="main-grid_btn">
-                    <span class="highlight">${a.price}</span>
-                  </div>
-                </div>
-             
-            </div>
-            </div>
-          </div>`;
-            mainGrid.insertAdjacentHTML("beforeend", items);
-            // 카테고리탭 버튼을 누를 때마다 탭버튼에 맞는 와인 화면에 보여주기
-            // 만약 내가 클릭한 버튼의 필터가 와인의 카테고리와 맞아 떨어지면 보여주세요
-
-            categoryTab.forEach((btn) => {
-              btn.addEventListener("click", function () {
-                let filter = this.dataset.filter;
-                const gridItem = document.querySelectorAll(".main-grid_item");
-
-                gridItem.forEach((item) => {
-                  let category = item.dataset.category;
-                  if (category == filter) {
-                    item.style.display = "flex";
-                  } else {
-                    item.style.display = "none";
-                  }
-                });
-              });
-            });
-          });
-        }
-      });
-    });
-  });
+    gridSlide.insertAdjacentHTML("beforeend", items);
+  }
 
   function openTab(index) {
     mainTab.forEach((tab) => {
@@ -843,12 +779,24 @@ champaigne.forEach((a) => {
 const prevBtn = document.querySelectorAll(".prev-btn");
 const nextBtn = document.querySelectorAll(".next-btn");
 let count = Array(nextBtn.length).fill(0);
-
+let next = 0;
 nextBtn.forEach((btn, i) => {
   btn.addEventListener("click", function () {
-    if (count[i] <= 7) {
+    if (count[i] <= 7 && window.innerWidth > 1440) {
       count[i]++;
-      let next = 431 * count[i];
+      next = 431 * count[i];
+      slideBox[i].style.transform = `translateX(-${next}px)`;
+    } else if (count[i] <= 7 && window.innerWidth > 1024) {
+      count[i]++;
+      next = 305 * count[i];
+      slideBox[i].style.transform = `translateX(-${next}px)`;
+    } else if (count[i] <= 7 && window.innerWidth > 768) {
+      count[i]++;
+      next = 226 * count[i];
+      slideBox[i].style.transform = `translateX(-${next}px)`;
+    } else {
+      count[i]++;
+      next = 226 * count[i];
       slideBox[i].style.transform = `translateX(-${next}px)`;
     }
   });
@@ -856,9 +804,21 @@ nextBtn.forEach((btn, i) => {
 
 prevBtn.forEach((btn, i) => {
   btn.addEventListener("click", function () {
-    if (count[i] >= 0) {
+    if (count[i] >= 0 && window.innerWidth > 1440) {
       count[i]--;
       let prev = count[i] * 431;
+      slideBox[i].style.transform = `translateX(-${prev}px)`;
+    } else if (count[i] >= 0 && window.innerWidth > 1024) {
+      count[i]--;
+      let prev = count[i] * 305;
+      slideBox[i].style.transform = `translateX(-${prev}px)`;
+    } else if (count[i] >= 0 && window.innerWidth > 768) {
+      count[i]--;
+      let prev = count[i] * 226;
+      slideBox[i].style.transform = `translateX(-${prev}px)`;
+    } else {
+      count[i]--;
+      let prev = count[i] * 226;
       slideBox[i].style.transform = `translateX(-${prev}px)`;
     }
   });
