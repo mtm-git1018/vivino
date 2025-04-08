@@ -383,15 +383,15 @@ document.addEventListener("DOMContentLoaded", function () {
       let move = mainCount * 295;
       gridSlide.style.transform = `translateX(-${move}px)`;
     }
-
-    mainPrevbtn.addEventListener("click", function () {
-      if (mainCount > 0) {
-        mainCount--;
-        let move = mainCount * 295;
-        gridSlide.style.transform = `translateX(-${move}px)`;
-      }
-    });
   });
+  mainPrevbtn.addEventListener("click", function () {
+    if (mainCount > 0) {
+      mainCount--;
+      let move = mainCount * 295;
+      gridSlide.style.transform = `translateX(-${move}px)`;
+    }
+  });
+
   // 메인그리드 아이텝
   products.forEach((a) => {
     addItem(a);
@@ -399,9 +399,10 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.addEventListener("click", function (e) {
         gridSlide.innerHTML = "";
         mainCount = 0;
-        maxLength = products.length;
         if (mainTab[0] === this) {
-          addItem(a);
+          products.forEach((a) => {
+            addItem(a);
+          });
         } else if (mainTab[1] === this) {
           let copy = [...products]
             .sort((a, b) => b.person - a.person)
@@ -412,6 +413,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         } else if (mainTab[2] === this) {
           maxLength = 6;
+          addItem(a);
           products.forEach((a) => {
             addItem(a);
             // 카테고리탭 버튼을 누를 때마다 탭버튼에 맞는 와인 화면에 보여주기
@@ -419,6 +421,7 @@ document.addEventListener("DOMContentLoaded", function () {
             categoryTab.forEach((btn) => {
               btn.addEventListener("click", function () {
                 let filter = this.dataset.filter;
+
                 const gridItem = document.querySelectorAll(".main-grid_item");
                 gridItem.forEach((item) => {
                   let category = item.dataset.category;
@@ -428,6 +431,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     item.style.display = "none";
                   }
                 });
+                mainCount = 0;
                 gridSlide.style.transform = `translateX(0px)`;
               });
             });
