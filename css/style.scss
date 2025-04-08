@@ -366,6 +366,7 @@ $ctaColor: rgba(
   max-width: 1440px;
   max-height: 1110px;
   margin: 50px auto;
+  overflow: hidden;
 }
 
 .grid-slide {
@@ -373,7 +374,6 @@ $ctaColor: rgba(
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repaet(2, 1fr);
   gap: 20px;
-  overflow: hidden;
 }
 .main-prev {
   width: 20px;
