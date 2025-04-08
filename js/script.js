@@ -509,6 +509,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//슬라이드 기능
+
 const slideWrap = document.querySelectorAll(".slide-wrap");
 let redWine = [
   {
@@ -730,7 +732,7 @@ let champaigne = [
 ];
 const slideBox = document.querySelectorAll(".slide-box");
 
-redWine.forEach((a) => {
+function addSlide(a, i) {
   let slide = `<div class="slide-item">
                   <div class="slide-item_img">
                   <img src="${a.image}">
@@ -745,62 +747,42 @@ redWine.forEach((a) => {
                          </div>
                    `;
 
-  slideBox[0].insertAdjacentHTML("beforeend", slide);
+  slideBox[i].insertAdjacentHTML("beforeend", slide);
+}
+
+redWine.forEach((a) => {
+  addSlide(a, 0);
 });
 
 whiteWine.forEach((a) => {
-  let slide = `<div class="slide-item">
-                  <div class="slide-item_img">
-                  <img src="${a.image}">
-                  </div>
-                  <div class="slide-item_text">
-                    <h3>${a.name}</h3>
-                    <p>${a.flavor}</p>
-                    </div>
-                    <div class="slide-item_btn">
-                      <span class="subtext">${a.price}</span>
-                      </div>
-                    </div>`;
-  slideBox[1].insertAdjacentHTML("beforeend", slide);
+  addSlide(a, 1);
 });
 
 champaigne.forEach((a) => {
-  let slide = `<div class="slide-item">
-                  <div class="slide-item_img">
-                  <img src="${a.image}">
-                  </div>
-                  <div class="slide-item_text">
-                    <h3>${a.name}</h3>
-                    <p>${a.flavor}</p>
-                    </div>
-                    <div class="slide-item_btn">
-                      <span class="subtext">${a.price}</span>
-                      </div>
-                    </div>`;
-  slideBox[2].insertAdjacentHTML("beforeend", slide);
+  addSlide(a, 2);
 });
 
 const prevBtn = document.querySelectorAll(".prev-btn");
 const nextBtn = document.querySelectorAll(".next-btn");
 let count = Array(nextBtn.length).fill(0);
-let next = 0;
+
+function slideWidth() {
+  if (window.innerWidth > 1440) {
+    return 431;
+  } else if (window.innerWidth > 1024) {
+    return 305;
+  } else if (window.innerWidth > 768) {
+    return 226;
+  } else {
+    return 226;
+  }
+}
+
 nextBtn.forEach((btn, i) => {
   btn.addEventListener("click", function () {
-    if (count[i] <= 7 && window.innerWidth > 1440) {
+    if (count[i] < 8) {
       count[i]++;
-      next = 431 * count[i];
-      slideBox[i].style.transform = `translateX(-${next}px)`;
-    } else if (count[i] <= 7 && window.innerWidth > 1024) {
-      count[i]++;
-      next = 305 * count[i];
-      slideBox[i].style.transform = `translateX(-${next}px)`;
-    } else if (count[i] <= 7 && window.innerWidth > 768) {
-      count[i]++;
-      next = 226 * count[i];
-      slideBox[i].style.transform = `translateX(-${next}px)`;
-    } else {
-      count[i]++;
-      next = 226 * count[i];
+      let next = slideWidth() * count[i];
       slideBox[i].style.transform = `translateX(-${next}px)`;
     }
   });
@@ -808,21 +790,9 @@ nextBtn.forEach((btn, i) => {
 
 prevBtn.forEach((btn, i) => {
   btn.addEventListener("click", function () {
-    if (count[i] >= 0 && window.innerWidth > 1440) {
+    if (count[i] > 0) {
       count[i]--;
-      let prev = count[i] * 431;
-      slideBox[i].style.transform = `translateX(-${prev}px)`;
-    } else if (count[i] >= 0 && window.innerWidth > 1024) {
-      count[i]--;
-      let prev = count[i] * 305;
-      slideBox[i].style.transform = `translateX(-${prev}px)`;
-    } else if (count[i] >= 0 && window.innerWidth > 768) {
-      count[i]--;
-      let prev = count[i] * 226;
-      slideBox[i].style.transform = `translateX(-${prev}px)`;
-    } else {
-      count[i]--;
-      let prev = count[i] * 226;
+      let prev = count[i] * slideWidth();
       slideBox[i].style.transform = `translateX(-${prev}px)`;
     }
   });

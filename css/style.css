@@ -344,11 +344,6 @@
   max-width: 1440px;
   max-height: 1110px;
   margin: 50px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repaet(2, 1fr);
-  gap: 20px;
-  overflow: hidden;
 }
 
 .grid-slide {
@@ -356,6 +351,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repaet(2, 1fr);
   gap: 20px;
+  overflow: hidden;
 }
 
 .main-prev {
@@ -810,8 +806,11 @@
     max-width: 859px;
   }
   .main-grid {
-    grid-template-columns: repeat(2, 1fr);
     max-width: 1024px;
+  }
+  .grid-slide {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
   .slide-container {
     max-width: 859px;
