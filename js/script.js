@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.6,
       person: 67,
       price: "₩88,000",
-      image: "../img/usflag.png",
-      wine: "../wines/cask.png",
+      image: "./image/usflag.png",
+      wine: "./image/cask.png",
       category: "usa",
     },
     {
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.6,
       person: 1701,
       price: "₩498,600",
-      image: "../img/franceflag.png",
-      wine: "../wines/brut.png",
+      image: "./image/franceflag.png",
+      wine: "./image/brut.png",
       category: "french",
     },
     {
@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.6,
       person: 10,
       price: "₩145,600",
-      image: "../img/usflag.png",
-      wine: "../wines/csHowell.png",
+      image: "./image/usflag.png",
+      wine: "./image/csHowell.png",
       category: "usa",
     },
     {
@@ -75,8 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.5,
       person: 270,
       price: "₩586,000",
-      image: "../img/italyflag.png",
-      wine: "../wines/tenuta.png",
+      image: "./image/italyflag.png",
+      wine: "./image/tenuta.png",
       category: "italy",
     },
     {
@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.5,
       person: 827,
       price: "₩64,000",
-      image: "../img/arhenflag.png",
-      wine: "../wines/bramare.png",
+      image: "./image/arhenflag.png",
+      wine: "./image/bramare.png",
       category: "southAmerica",
     },
     {
@@ -97,8 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.6,
       person: 2829,
       price: "₩366,000",
-      image: "../img/spainflag.png",
-      wine: "../wines/valbuena.png",
+      image: "./image/spainflag.png",
+      wine: "./image/valbuena.png",
       category: "westEurope",
     },
 
@@ -109,8 +109,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 133727,
       price: "₩102,000",
-      image: "../img/franceflag.png",
-      wine: "../wines/moet.png",
+      image: "./image/franceflag.png",
+      wine: "./image/moet.png",
       category: "french",
     },
     {
@@ -120,8 +120,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.2,
       person: 7061,
       price: "₩64,600",
-      image: "../img/franceflag.png",
-      wine: "../wines/saint-emil.png",
+      image: "./image/franceflag.png",
+      wine: "./image/saint-emil.png",
       category: "french",
     },
     {
@@ -131,8 +131,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 29324,
       price: "₩54,100",
-      image: "../img/franceflag.png",
-      wine: "../wines/lafiole.png",
+      image: "./image/franceflag.png",
+      wine: "./image/lafiole.png",
       category: "french",
     },
     {
@@ -142,8 +142,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.7,
       person: 19581,
       price: "₩30,800",
-      image: "../img/franceflag.png",
-      wine: "../wines/legrand.png",
+      image: "./image/franceflag.png",
+      wine: "./image/legrand.png",
       category: "french",
     },
     {
@@ -153,8 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.0,
       person: 17325,
       price: "₩92,600",
-      image: "../img/franceflag.png",
-      wine: "../wines/chateau.png",
+      image: "./image/franceflag.png",
+      wine: "./image/chateau.png",
       category: "french",
     },
     {
@@ -164,8 +164,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.5,
       person: 60393,
       price: "₩26,000",
-      image: "../img/italyflag.png",
-      wine: "../wines/ruffino.png",
+      image: "./image/italyflag.png",
+      wine: "./image/ruffino.png",
       category: "italy",
     },
     {
@@ -175,8 +175,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.8,
       person: 33560,
       price: "₩26,000",
-      image: "../img/italyflag.png",
-      wine: "../wines/lamarca.png",
+      image: "./image/italyflag.png",
+      wine: "./image/lamarca.png",
       category: "italy",
     },
     {
@@ -186,8 +186,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 26986,
       price: "₩24,000",
-      image: "../img/italyflag.png",
-      wine: "../wines/cadel.png",
+      image: "./image/italyflag.png",
+      wine: "./image/cadel.png",
       category: "italy",
     },
     {
@@ -197,8 +197,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.0,
       person: 26986,
       price: "₩55,000",
-      image: "../img/italyflag.png",
-      wine: "../wines/avign.png",
+      image: "./image/italyflag.png",
+      wine: "./image/avign.png",
       category: "italy",
     },
     {
@@ -208,8 +208,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.2,
       person: 95291,
       price: "₩22,000",
-      image: "../img/spainflag.png",
-      wine: "../wines/felix.png",
+      image: "./image/spainflag.png",
+      wine: "./image/felix.png",
       category: "westEurope",
     },
     {
@@ -219,8 +219,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.0,
       person: 6866,
       price: "₩51,400",
-      image: "../img/ptflag.png",
-      wine: "../wines/casa.png",
+      image: "./image/ptflag.png",
+      wine: "./image/casa.png",
       category: "westEurope",
     },
     {
@@ -230,8 +230,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 5834,
       price: "₩20,500",
-      image: "../img/ptflag.png",
-      wine: "../wines/silk.png",
+      image: "./image/ptflag.png",
+      wine: "./image/silk.png",
       category: "westEurope",
     },
     {
@@ -241,8 +241,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.0,
       person: 42426,
       price: "₩66,000",
-      image: "../img/spainflag.png",
-      wine: "../wines/borsao.png",
+      image: "./image/spainflag.png",
+      wine: "./image/borsao.png",
       category: "westEurope",
     },
     {
@@ -252,8 +252,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.0,
       person: 24108,
       price: "₩55,500",
-      image: "../img/spainflag.png",
-      wine: "../wines/lan.png",
+      image: "./image/spainflag.png",
+      wine: "./image/lan.png",
       category: "westEurope",
     },
     {
@@ -263,8 +263,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.2,
       person: 37219,
       price: "₩102,000",
-      image: "../img/arhenflag.png",
-      wine: "../wines/catena.png",
+      image: "./image/arhenflag.png",
+      wine: "./image/catena.png",
       category: "southAmerica",
     },
     {
@@ -274,8 +274,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.5,
       person: 35187,
       price: "₩30,800",
-      image: "../img/arhenflag.png",
-      wine: "../wines/altos.png",
+      image: "./image/arhenflag.png",
+      wine: "./image/altos.png",
       category: "southAmerica",
     },
     {
@@ -285,8 +285,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.3,
       person: 23746,
       price: "₩44,100",
-      image: "../img/arhenflag.png",
-      wine: "../wines/vina.png",
+      image: "./image/arhenflag.png",
+      wine: "./image/vina.png",
       category: "southAmerica",
     },
     {
@@ -296,8 +296,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.9,
       person: 19610,
       price: "₩24,600",
-      image: "../img/chilflag.png",
-      wine: "../wines/gran.png",
+      image: "./image/chilflag.png",
+      wine: "./image/gran.png",
       category: "southAmerica",
     },
     {
@@ -307,8 +307,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.4,
       person: 13498,
       price: "₩102,900",
-      image: "../img/chilflag.png",
-      wine: "../wines/caballo.png",
+      image: "./image/chilflag.png",
+      wine: "./image/caballo.png",
       category: "southAmerica",
     },
     {
@@ -318,8 +318,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 180754,
       price: "₩28,000",
-      image: "../img/usflag.png",
-      wine: "../wines/meiomi.png",
+      image: "./image/usflag.png",
+      wine: "./image/meiomi.png",
       category: "usa",
     },
     {
@@ -329,8 +329,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.1,
       person: 41081,
       price: "₩25,000",
-      image: "../img/usflag.png",
-      wine: "../wines/bonanza.png",
+      image: "./image/usflag.png",
+      wine: "./image/bonanza.png",
       category: "usa",
     },
     {
@@ -340,8 +340,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.2,
       person: 38468,
       price: "₩48,000",
-      image: "../img/usflag.png",
-      wine: "../wines/prison.png",
+      image: "./image/usflag.png",
+      wine: "./image/prison.png",
       category: "usa",
     },
     {
@@ -351,8 +351,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 3.9,
       person: 36007,
       price: "₩23,000",
-      image: "../img/usflag.png",
-      wine: "../wines/liberty.png",
+      image: "./image/usflag.png",
+      wine: "./image/liberty.png",
       category: "usa",
     },
     {
@@ -362,8 +362,8 @@ document.addEventListener("DOMContentLoaded", function () {
       point: 4.5,
       person: 411,
       price: "₩83,000",
-      image: "../img/italyflag.png",
-      wine: "../wines/pietro.png",
+      image: "./image/italyflag.png",
+      wine: "./image/pietro.png",
       category: "italy",
     },
   ];
@@ -507,308 +507,308 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-});
 
-//슬라이드 기능
+  //슬라이드 기능
 
-const slideWrap = document.querySelectorAll(".slide-wrap");
-let redWine = [
-  {
-    id: 0,
-    name: "Cartuxa Pêra-Manca Tinto 2005",
-    image: "../wines/cartuxa.png",
-    flavor: "plum, blackberry, vanilla",
-    price: "29,000",
-  },
-  {
-    id: 1,
-    name: "Quintarelli Giuseppe Classico 2000",
-    image: "../wines/quin.png",
-    flavor: "chocolate, violet, jam",
-    price: "16,000",
-  },
-  {
-    id: 2,
-    name: "Château Haut-Brion Pessac-Léognan  1990",
-    image: "../wines/pess.png",
-    flavor: "blackfruit, cherry, mint",
-    price: "19,000",
-  },
-  {
-    id: 3,
-    name: "Casa Ferreirinha Barca Velha Douro 1999",
-    image: "../wines/barca.png",
-    flavor: "oak, red fruit, prune",
-    price: "24,000",
-  },
-  {
-    id: 4,
-    name: "Château La Mission Haut-Brion Pessac-Léognan 1989",
-    image: "../wines/leog.png",
-    flavor: "cassis, raspberry, fig",
-    price: "32,000",
-  },
-  {
-    id: 5,
-    name: "Masseto Toscana 2007",
-    image: "../wines/masseto.png",
-    flavor: "chochlate, blackberry, truffles",
-    price: "24,000",
-  },
-  {
-    id: 6,
-    name: "Harlan Estate Red 2016",
-    image: "../wines/harlan.png",
-    flavor: "oak, blackberry, blackcurrant",
-    price: "17,000",
-  },
-  {
-    id: 7,
-    name: "Legado Douro Tinto 2015",
-    image: "../wines/douro.png",
-    flavor: "oak, plum, cinnamon",
-    price: "38,000",
-  },
-  {
-    id: 8,
-    name: "Scarecrow Cabernet Sauvignon 2016 United",
-    image: "../wines/scare.png",
-    flavor: "cassis, pepper, cherry",
-    price: "102,000",
-  },
-  {
-    id: 9,
-    name: "Viña Cobos Cobos Volturno 2016",
-    image: "../wines/cobos.png",
-    flavor: "chocolate, cherry, cocoa",
-    price: "23,000",
-  },
-];
+  const slideWrap = document.querySelectorAll(".slide-wrap");
+  let redWine = [
+    {
+      id: 0,
+      name: "Cartuxa Pêra-Manca Tinto 2005",
+      image: "./image/cartuxa.png",
+      flavor: "plum, blackberry, vanilla",
+      price: "29,000",
+    },
+    {
+      id: 1,
+      name: "Quintarelli Giuseppe Classico 2000",
+      image: "./image/quin.png",
+      flavor: "chocolate, violet, jam",
+      price: "16,000",
+    },
+    {
+      id: 2,
+      name: "Château Haut-Brion Pessac-Léognan  1990",
+      image: "./image/pess.png",
+      flavor: "blackfruit, cherry, mint",
+      price: "19,000",
+    },
+    {
+      id: 3,
+      name: "Casa Ferreirinha Barca Velha Douro 1999",
+      image: "./image/barca.png",
+      flavor: "oak, red fruit, prune",
+      price: "24,000",
+    },
+    {
+      id: 4,
+      name: "Château La Mission Haut-Brion Pessac-Léognan 1989",
+      image: "./image/leog.png",
+      flavor: "cassis, raspberry, fig",
+      price: "32,000",
+    },
+    {
+      id: 5,
+      name: "Masseto Toscana 2007",
+      image: "./image/masseto.png",
+      flavor: "chochlate, blackberry, truffles",
+      price: "24,000",
+    },
+    {
+      id: 6,
+      name: "Harlan Estate Red 2016",
+      image: "./image/harlan.png",
+      flavor: "oak, blackberry, blackcurrant",
+      price: "17,000",
+    },
+    {
+      id: 7,
+      name: "Legado Douro Tinto 2015",
+      image: "./image/douro.png",
+      flavor: "oak, plum, cinnamon",
+      price: "38,000",
+    },
+    {
+      id: 8,
+      name: "Scarecrow Cabernet Sauvignon 2016 United",
+      image: "./image/scare.png",
+      flavor: "cassis, pepper, cherry",
+      price: "102,000",
+    },
+    {
+      id: 9,
+      name: "Viña Cobos Cobos Volturno 2016",
+      image: "./image/cobos.png",
+      flavor: "chocolate, cherry, cocoa",
+      price: "23,000",
+    },
+  ];
 
-let whiteWine = [
-  {
-    id: 0,
-    name: "Whitehaven Sauvignon Blanc 2024",
-    image: "../wines/heaven.png",
-    flavor: "grapefruit, pear, citrus",
-    price: "26,000",
-  },
-  {
-    id: 1,
-    name: "Pascal Jolivet Sancerre Blanc 2024",
-    image: "../wines/pascal.png",
-    flavor: "green apple, honey, gooseberry",
-    price: "51,000",
-  },
-  {
-    id: 2,
-    name: "Mer Soleil Reserve Chardonnay 2023",
-    image: "../wines/mersole.png",
-    flavor: "butter, apple, tropical",
-    price: "51,000",
-  },
-  {
-    id: 3,
-    name: "The Crossings Sauvignon Blanc 2024",
-    image: "../wines/cross.png",
-    flavor: "citrus, passion fruit, peach",
-    price: "25,000",
-  },
-  {
-    id: 4,
-    name: "Babich Sauvignon Blanc 2024",
-    image: "../wines/babich.png",
-    flavor: "lime, pineapple, green apple",
-    price: "32,000",
-  },
-  {
-    id: 5,
-    name: "Louis Latour Pouilly-Fuissé 2023",
-    image: "../wines/latour.png",
-    flavor: "pear, lemon, butter",
-    price: "52,000",
-  },
-  {
-    id: 6,
-    name: "Tramin Nussbaumer Gewürztraminer 2023",
-    image: "../wines/tramin.png",
-    flavor: "lychee, honey, melon",
-    price: "66,000",
-  },
-  {
-    id: 7,
-    name: "Schmitt Söhne Riesling Relax 2023",
-    image: "../wines/schmitt.png",
-    flavor: "apple, lemon, honey",
-    price: "17,000",
-  },
-  {
-    id: 8,
-    name: "Abbazia di Novacella Kerner 2024",
-    image: "../wines/abbazia.png",
-    flavor: "peach, lemon, honey",
-    price: "41,000",
-  },
-  {
-    id: 9,
-    name: "J. Moreau & Fils Chablis 2021",
-    image: "../wines/fils.png",
-    flavor: "citrus, apple, honey",
-    price: "50,000",
-  },
-];
+  let whiteWine = [
+    {
+      id: 0,
+      name: "Whitehaven Sauvignon Blanc 2024",
+      image: "./image/heaven.png",
+      flavor: "grapefruit, pear, citrus",
+      price: "26,000",
+    },
+    {
+      id: 1,
+      name: "Pascal Jolivet Sancerre Blanc 2024",
+      image: "./image/pascal.png",
+      flavor: "green apple, honey, gooseberry",
+      price: "51,000",
+    },
+    {
+      id: 2,
+      name: "Mer Soleil Reserve Chardonnay 2023",
+      image: "./image/mersole.png",
+      flavor: "butter, apple, tropical",
+      price: "51,000",
+    },
+    {
+      id: 3,
+      name: "The Crossings Sauvignon Blanc 2024",
+      image: "./image/cross.png",
+      flavor: "citrus, passion fruit, peach",
+      price: "25,000",
+    },
+    {
+      id: 4,
+      name: "Babich Sauvignon Blanc 2024",
+      image: "./image/babich.png",
+      flavor: "lime, pineapple, green apple",
+      price: "32,000",
+    },
+    {
+      id: 5,
+      name: "Louis Latour Pouilly-Fuissé 2023",
+      image: "./image/latour.png",
+      flavor: "pear, lemon, butter",
+      price: "52,000",
+    },
+    {
+      id: 6,
+      name: "Tramin Nussbaumer Gewürztraminer 2023",
+      image: "./image/tramin.png",
+      flavor: "lychee, honey, melon",
+      price: "66,000",
+    },
+    {
+      id: 7,
+      name: "Schmitt Söhne Riesling Relax 2023",
+      image: "./image/schmitt.png",
+      flavor: "apple, lemon, honey",
+      price: "17,000",
+    },
+    {
+      id: 8,
+      name: "Abbazia di Novacella Kerner 2024",
+      image: "./image/abbazia.png",
+      flavor: "peach, lemon, honey",
+      price: "41,000",
+    },
+    {
+      id: 9,
+      name: "J. Moreau & Fils Chablis 2021",
+      image: "./image/fils.png",
+      flavor: "citrus, apple, honey",
+      price: "50,000",
+    },
+  ];
 
-let champaigne = [
-  {
-    id: 0,
-    name: "Veuve Clicquot Brut Champagne N.V.",
-    image: "../wines/veuve.png",
-    flavor: "apple, citrus, brioche",
-    price: "88,000",
-  },
-  {
-    id: 1,
-    name: "Bollinger Special Cuvée Brut Aÿ Champagne N.V.",
-    image: "../wines/boll.png",
-    flavor: "pear, toast, citrus",
-    price: "102,000",
-  },
-  {
-    id: 2,
-    name: "Laurent-Perrier La Cuvée Brut Champagne N.V",
-    image: "../wines/cuvee.png",
-    flavor: "citrus, apple, brioche",
-    price: "73,000",
-  },
-  {
-    id: 3,
-    name: "Taittinger Brut Champagne N.V.",
-    image: "../wines/tait.png",
-    flavor: "green apple, citrus, toast",
-    price: "64,000",
-  },
-  {
-    id: 4,
-    name: "Perrier-Jouët Grand Brut Champagne N.V.",
-    image: "../wines/errier.png",
-    flavor: "peach, citrus, almond",
-    price: "102,000",
-  },
-  {
-    id: 5,
-    name: "Pol Roger Réserve Brut Champagne N.V.",
-    image: "../wines/pol.png",
-    flavor: "apple, biscuit, citrus",
-    price: "100,000",
-  },
-  {
-    id: 6,
-    name: "Pommery Royal Brut Champagne N.V.",
-    image: "../wines/pomm.png",
-    flavor: "apple, almond, citrus",
-    price: "75,000",
-  },
-  {
-    id: 7,
-    name: "G.H. Mumm Brut Champagne N.V.",
-    image: "../wines/mumm.png",
-    flavor: "green apple, citrus, toast",
-    price: "73,000",
-  },
-  {
-    id: 8,
-    name: "Billecart-Salmon Brut Réserve Champagne N.V.",
-    image: "../wines/salmon.png",
-    flavor: "apple, brioche, citrus",
-    price: "95,000",
-  },
-  {
-    id: 9,
-    name: "Deutz Classic Brut Champagne N.V.",
-    image: "../wines/deutz.png",
-    flavor: "apple, citrus, toast",
-    price: "73,000",
-  },
-];
-const slideBox = document.querySelectorAll(".slide-box");
+  let champaigne = [
+    {
+      id: 0,
+      name: "Veuve Clicquot Brut Champagne N.V.",
+      image: "./image/veuve.png",
+      flavor: "apple, citrus, brioche",
+      price: "88,000",
+    },
+    {
+      id: 1,
+      name: "Bollinger Special Cuvée Brut Aÿ Champagne N.V.",
+      image: "./image/boll.png",
+      flavor: "pear, toast, citrus",
+      price: "102,000",
+    },
+    {
+      id: 2,
+      name: "Laurent-Perrier La Cuvée Brut Champagne N.V",
+      image: "./image/cuvee.png",
+      flavor: "citrus, apple, brioche",
+      price: "73,000",
+    },
+    {
+      id: 3,
+      name: "Taittinger Brut Champagne N.V.",
+      image: "./image/tait.png",
+      flavor: "green apple, citrus, toast",
+      price: "64,000",
+    },
+    {
+      id: 4,
+      name: "Perrier-Jouët Grand Brut Champagne N.V.",
+      image: "./image/errier.png",
+      flavor: "peach, citrus, almond",
+      price: "102,000",
+    },
+    {
+      id: 5,
+      name: "Pol Roger Réserve Brut Champagne N.V.",
+      image: "./image/pol.png",
+      flavor: "apple, biscuit, citrus",
+      price: "100,000",
+    },
+    {
+      id: 6,
+      name: "Pommery Royal Brut Champagne N.V.",
+      image: "./image/pomm.png",
+      flavor: "apple, almond, citrus",
+      price: "75,000",
+    },
+    {
+      id: 7,
+      name: "G.H. Mumm Brut Champagne N.V.",
+      image: "./image/mumm.png",
+      flavor: "green apple, citrus, toast",
+      price: "73,000",
+    },
+    {
+      id: 8,
+      name: "Billecart-Salmon Brut Réserve Champagne N.V.",
+      image: "./image/salmon.png",
+      flavor: "apple, brioche, citrus",
+      price: "95,000",
+    },
+    {
+      id: 9,
+      name: "Deutz Classic Brut Champagne N.V.",
+      image: "./image/deutz.png",
+      flavor: "apple, citrus, toast",
+      price: "73,000",
+    },
+  ];
+  const slideBox = document.querySelectorAll(".slide-box");
 
-function addSlide(a, i) {
-  let slide = `<div class="slide-item">
-                  <div class="slide-item_img">
-                  <img src="${a.image}">
-                  </div>
-                  <div class="slide-item_text">
-                    <h3>${a.name}</h3>
-                    <p>${a.flavor}</p>
-                  </div>
-                    <div class="slide-item_btn">
-                      <span class="subtext">${a.price}</span>
-                      </div>
-                         </div>
-                   `;
-
-  slideBox[i].insertAdjacentHTML("beforeend", slide);
-}
-
-redWine.forEach((a) => {
-  addSlide(a, 0);
-});
-
-whiteWine.forEach((a) => {
-  addSlide(a, 1);
-});
-
-champaigne.forEach((a) => {
-  addSlide(a, 2);
-});
-
-const prevBtn = document.querySelectorAll(".prev-btn");
-const nextBtn = document.querySelectorAll(".next-btn");
-let count = Array(nextBtn.length).fill(0);
-
-function slideWidth() {
-  if (window.innerWidth > 1440) {
-    return 431;
-  } else if (window.innerWidth > 1024) {
-    return 305;
-  } else if (window.innerWidth > 768) {
-    return 226;
-  } else {
-    return 226;
+  function addSlide(a, i) {
+    let slide = `
+    <div class="slide-item">
+      <div class="slide-item_img">
+        <img src="${a.image}">
+      </div>
+      <div class="slide-item_text">
+        <h3>${a.name}</h3>
+        <p>${a.flavor}</p>
+      </div>
+      <div class="slide-item_btn">
+        <span class="subtext">${a.price}</span>
+      </div>
+    </div>
+  `;
+    slideBox[i].insertAdjacentHTML("beforeend", slide);
   }
-}
 
-nextBtn.forEach((btn, i) => {
-  btn.addEventListener("click", function () {
-    if (count[i] < 8) {
-      count[i]++;
-      let next = slideWidth() * count[i];
-      slideBox[i].style.transform = `translateX(-${next}px)`;
-    }
+  redWine.forEach((a) => {
+    addSlide(a, 0);
   });
-});
 
-prevBtn.forEach((btn, i) => {
-  btn.addEventListener("click", function () {
-    if (count[i] > 0) {
-      count[i]--;
-      let prev = count[i] * slideWidth();
-      slideBox[i].style.transform = `translateX(-${prev}px)`;
-    }
+  whiteWine.forEach((a) => {
+    addSlide(a, 1);
   });
-});
 
-// region-container가 사라질때 0.3초 딜레이발생
+  champaigne.forEach((a) => {
+    addSlide(a, 2);
+  });
 
-// 이메일 정규식
-const subscribeText = document.querySelector(".subscribe-text");
-const subscribeBtn = document.querySelector(".subscribe");
-subscribeText.addEventListener("input", function () {
-  if (/\S+@\S+\.\S+/.test(subscribeText.value)) {
-    subscribeBtn.style.cursor = "pointer";
-    subscribeBtn.style.backgroundColor = "rgba(176, 58, 72, 0.66)";
-  } else {
-    subscribeBtn.style.cursor = "not-allowed";
-    subscribeBtn.style.backgroundColor = "#2e2e2e";
+  const prevBtn = document.querySelectorAll(".prev-btn");
+  const nextBtn = document.querySelectorAll(".next-btn");
+  let count = Array(nextBtn.length).fill(0);
+
+  function slideWidth() {
+    if (window.innerWidth > 1440) {
+      return 431;
+    } else if (window.innerWidth > 1024) {
+      return 305;
+    } else if (window.innerWidth > 768) {
+      return 226;
+    } else {
+      return 226;
+    }
   }
-}); // DOM
+
+  nextBtn.forEach((btn, i) => {
+    btn.addEventListener("click", function () {
+      if (count[i] < 8) {
+        count[i]++;
+        let next = slideWidth() * count[i];
+        slideBox[i].style.transform = `translateX(-${next}px)`;
+      }
+    });
+  });
+
+  prevBtn.forEach((btn, i) => {
+    btn.addEventListener("click", function () {
+      if (count[i] > 0) {
+        count[i]--;
+        let prev = count[i] * slideWidth();
+        slideBox[i].style.transform = `translateX(-${prev}px)`;
+      }
+    });
+  });
+
+  // region-container가 사라질때 0.3초 딜레이발생
+
+  // 이메일 정규식
+  const subscribeText = document.querySelector(".subscribe-text");
+  const subscribeBtn = document.querySelector(".subscribe");
+  subscribeText.addEventListener("input", function () {
+    if (/\S+@\S+\.\S+/.test(subscribeText.value)) {
+      subscribeBtn.style.cursor = "pointer";
+      subscribeBtn.style.backgroundColor = "rgba(176, 58, 72, 0.66)";
+    } else {
+      subscribeBtn.style.cursor = "not-allowed";
+      subscribeBtn.style.backgroundColor = "#2e2e2e";
+    }
+  }); // DOM
+});
