@@ -1015,7 +1015,8 @@
     position: relative;
   }
   .main-tab_btn {
-    gap: 50px;
+    gap: 15px;
+    padding: 10px;
   }
   .tab, .category-tab {
     width: 120px;
@@ -1064,7 +1065,7 @@
     display: block;
     width: 40px;
     height: 40px;
-    left: 10%;
+    left: 0;
     top: 50%;
     cursor: pointer;
   }
@@ -1074,7 +1075,7 @@
     height: 40px;
     cursor: pointer;
     top: 50%;
-    right: 10%;
+    right: 0;
   }
   .main-grid_mainimg {
     width: 100%;
